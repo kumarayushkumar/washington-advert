@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: url('../public/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Platypi';
+    src: url('../public/fonts/Platypi-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Red Rose';
+    src: url('../public/fonts/RedRose-VariableFont_wght.ttf');
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Open sans', sans-serif;
+  }
+}
