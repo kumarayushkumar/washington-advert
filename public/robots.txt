@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://washingtonadvert.com/sitemap.xml
