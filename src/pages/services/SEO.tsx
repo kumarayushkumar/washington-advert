@@ -1,4 +1,4 @@
-export function SEO(){
+export function SEO() {
   return (
     <div>
       <h1>SEO</h1>
