@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+import tailwindcssAnimate from 'tailwindcss-animate';
+import tailwindScrollbar from 'tailwind-scrollbar';
+
+export default {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -9,6 +13,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      'main': ['"Bebas Neue"', 'serif'],
+      'sub': ['"Red Rose"', 'serif'],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -51,6 +59,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        whiteout: {
+          DEFAULT: "hsl(var(--whiteout))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,6 +83,19 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-  },
-  plugins: [require("tailwindcss-animate")],
+    plugins: [tailwindcssAnimate,
+      tailwindScrollbar,
+      function ({ addUtilities }) {
+        const newUtilities = {
+          '.no-scrollbar::-webkit-scrollbar': {
+            display: 'none'
+          },
+          '.no-scrollbar': {
+            '-ms-overflow-style': 'none',
+            'scrollbar-width': 'none'
+          }
+        }
+        addUtilities(newUtilities)
+      }]
+  }
 }

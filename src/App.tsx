@@ -23,27 +23,29 @@ import { AboutUs } from './pages/AboutUs'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/">
       <Route index element={<Home />} />
 
-      <Route path="services">
-        <Route index element={<Services />} />
-        <Route path="web-designing" element={<WebDesigning />} />
-        <Route path="seo" element={<SEO />} />
-        <Route path="ppc" element={<PPC />} />
-        <Route
-          path="social-media-marketing"
-          element={<SocialMediaMarketing />}
-        />
-        <Route path="local-seo" element={<LocalSEO />} />
-        <Route path="gmb" element={<GMB />} />
-      </Route>
-      <Route path="packages" element={<Packages />} />
-      <Route path="testimonials" element={<Testimonials />} />
-      <Route path="industries" element={<Industries />} />
+      <Route element={<Layout />}>
+        <Route path="services">
+          <Route index element={<Services />} />
+          <Route path="web-designing" element={<WebDesigning />} />
+          <Route path="seo" element={<SEO />} />
+          <Route path="ppc" element={<PPC />} />
+          <Route
+            path="social-media-marketing"
+            element={<SocialMediaMarketing />}
+          />
+          <Route path="local-seo" element={<LocalSEO />} />
+          <Route path="gmb" element={<GMB />} />
+        </Route>
+        <Route path="packages" element={<Packages />} />
+        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="industries" element={<Industries />} />
 
-      <Route path="contact-us" element={<ContactUs />} />
-      <Route path="about-us" element={<AboutUs />} />
+        <Route path="contact-us" element={<ContactUs />} />
+        <Route path="about-us" element={<AboutUs />} />
+      </Route>
 
       <Route path="*" element={<Error />} />
     </Route>

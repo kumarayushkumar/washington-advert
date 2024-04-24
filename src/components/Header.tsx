@@ -1,11 +1,10 @@
-import { Button } from '@/components/ui/button'
+import Navbar from './Navbar'
 
 export default function Header() {
   return (
-    <div>
-      <h1 className="bg-red-300 text-3xl">Header</h1>
-      <h1 className="bg-primary text-white text-3xl">dwdadw</h1>
-      <Button>Click me</Button>
-    </div>
+    <header className="flex container text-white justify-between pt-8 px-16">
+      <h1 className="font-main font-bold text-5xl">Washington Advert</h1>
+      <Navbar />
+    </header>
   )
 }
