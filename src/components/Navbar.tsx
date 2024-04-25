@@ -33,8 +33,8 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="font-sub text-center text-lg font-medium">
-      <ul className="flex justify-between gap-6">
+    <nav className="flex font-sub text-center items-center text-lg font-medium">
+      <ul className="flex justify-between gap-6 items-center">
         {navLinks.map((nav, index) => {
           return (
             <Link key={index} to={nav.href} onClick={() => {}}>

@@ -15,7 +15,8 @@ export default {
   theme: {
     fontFamily: {
       main: ['"Bebas Neue"', 'serif'],
-      sub: ['"Red Rose"', 'serif']
+      sub: ['"Red Rose"', 'serif'],
+      highlight: ['"Libre Baskerville"', 'serif']
     },
     container: {
       center: true,

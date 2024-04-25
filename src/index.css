@@ -86,8 +86,8 @@
   }
 
   @font-face {
-    font-family: 'Platypi';
-    src: url('/assets/fonts/Platypi-VariableFont_wght.ttf');
+    font-family: 'Libre Baskerville';
+    src: url('/assets/fonts/LibreBaskerville-Regular.ttf');
   }
 
   @font-face {
@@ -146,4 +146,43 @@
 .header-wrapper {
   position: relative;
   z-index: 2;
+}
+
+/* Let's talk */
+.lets-talk-action-wrapper {
+  background-image: linear-gradient(
+    to right bottom,
+    #4169e1,
+    #8f56d0,
+    #bd3cb3,
+    #da1b8e,
+    #e70065,
+    #e00061,
+    #d9005e,
+    #d2005a,
+    #b70c76,
+    #91278a,
+    #5f3693,
+    #0a3d91
+  );
+}
+
+.lets-talk-action-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 225, 225, 0.1);
+}
+
+.lets-talk-action {
+  position: relative;
+  z-index: 10;
+}
+
+/* Footer */
+.social-media > a {
+  font-size: 1.75rem;
 }

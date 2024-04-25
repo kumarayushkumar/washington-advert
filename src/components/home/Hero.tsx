@@ -1,5 +1,5 @@
-import Header from './Header'
-import { Button } from './ui/button'
+import Header from '../Header'
+import { Button } from '../ui/button'
 
 export default function Hero() {
   return (
@@ -12,10 +12,10 @@ export default function Hero() {
           <p className="">Digital Marketing</p>
           <p className="mt-3">That Drives Your Business</p>
         </div>
-        <p className="mt-10 text-2xl">
+        <p className="mt-12 text-xl font-highlight">
           Get Started Today, Supercharge Your Digital Presence.
         </p>
-        <div className="mt-6 flex gap-6">
+        <div className="mt-8 flex gap-6">
           <Button className="border-2 text-lg border-white py-6 px-6 rounded-none bg-transparent font-semibold">
             Get Started
           </Button>
