@@ -48,7 +48,7 @@ const services = [
 export default function Expertise() {
   return (
     <section id="services" className="px-10 text-whiteout py-16 ">
-      <div className="relative z-10">
+      <div className="relative z-10 container">
         <div className="text-center text-5xl font-semibold text-whiteout">
           Our Expertise
         </div>

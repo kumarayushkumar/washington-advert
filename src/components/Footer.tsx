@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-accent text-white pt-12 pb-8">
-      <p className=" px-20 font-main text-3xl">WASHINGTON ADVERT</p>
+      <p className=" px-20 font-main text-3xl container">WASHINGTON ADVERT</p>
       <div className="social-media bg-secondary my-10 flex justify-center gap-10 py-4 text-whiteout">
         <a
           href="https://www.instagram.com/wearegrowigh/"
