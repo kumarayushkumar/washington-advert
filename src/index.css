@@ -194,7 +194,7 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../public/assets/images/dc-monument.jpg');
+  background-image: url('/assets/images/dc-monument.webp');
   content: '';
   position: absolute;
   top: 0;

@@ -1,9 +1,9 @@
-import services1 from '/assets/images/services/services-1.jpg'
-import services2 from '/assets/images/services/services-2.jpg'
-import services3 from '/assets/images/services/services-3.jpg'
-import services4 from '/assets/images/services/services-4.jpg'
-import services5 from '/assets/images/services/services-5.jpg'
-import services6 from '/assets/images/services/services-6.jpg'
+import services1 from '/assets/images/services/services-1.webp'
+import services2 from '/assets/images/services/services-2.webp'
+import services3 from '/assets/images/services/services-3.webp'
+import services4 from '/assets/images/services/services-4.webp'
+import services5 from '/assets/images/services/services-5.webp'
+import services6 from '/assets/images/services/services-6.webp'
 import ServiceCard from '../card/ServiceCard'
 
 const services = [
@@ -11,37 +11,37 @@ const services = [
     title: 'Web Designing',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services1,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   },
   {
     title: 'Pay Per Click',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services2,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   },
   {
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services4,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   },
   {
     title: 'Social Media Marketing',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services3,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   },
   {
     title: 'Local SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services5,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   },
   {
     title: 'Google My Business',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services6,
-    buttonText: 'Learn More'
+    buttonText: 'Know More'
   }
 ]
 
@@ -52,7 +52,7 @@ export default function Expertise() {
         <div className="text-center text-5xl font-semibold text-whiteout">
           Our Expertise
         </div>
-        <div className="my-4">
+        <div className="pt-12 pb-8 md:pt-16 md:pb-14">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

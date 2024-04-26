@@ -35,7 +35,7 @@ export default function ServiceCard({
           </p>
           <Button
             variant={'primary'}
-            className="bg-secondary/40 mt-6 border-accent hover:bg-secondary/40 hover:border-accent hover:shadow-md">
+            className="mt-6 bg-rose-600 border-primary">
             {buttonText}
           </Button>
         </div>

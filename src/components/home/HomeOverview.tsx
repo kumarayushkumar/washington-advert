@@ -2,7 +2,7 @@ export default function HomeOverview() {
   return (
     <section
       id="home-overview"
-      className="px-16 py-16 grid grid-cols-3 bg-whiteout container">
+      className="px-16 py-20 grid grid-cols-3 bg-whiteout container">
       <div className="text-accent col-span-1 text-center uppercase text-lg font-medium mt-8">
         Digital Agency
       </div>
@@ -11,7 +11,7 @@ export default function HomeOverview() {
           <p>A Brand-first</p>
           <p>Digital Agency</p>
         </div>
-        <p className="pt-10 text-slate-600">
+        <p className="pt-12 text-slate-600">
           We are a passionate team of strategists, creatives, and storytellers
           who weave compelling narratives across all digital channels. From
           cutting-edge website design to data-driven social media campaigns, we
