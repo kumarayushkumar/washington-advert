@@ -23,17 +23,17 @@ export default function Navbar() {
       href: '/industries'
     },
     {
-      title: 'Contact Us',
-      href: '/contact-us'
+      title: 'Combo Package',
+      href: '/combo-package'
     },
     {
-      title: 'About Us',
-      href: '/about-us'
+      title: 'Contact Us',
+      href: '/contact-us'
     }
   ]
 
   return (
-    <nav className="flex font-sub text-center items-center text-lg font-medium">
+    <nav className="flex font-sub text-center items-center text-md font-medium">
       <ul className="flex justify-between gap-6 items-center">
         {navLinks.map((nav, index) => {
           return (

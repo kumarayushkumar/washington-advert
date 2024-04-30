@@ -6,8 +6,11 @@ export default function Header() {
   const isHome = location.pathname === '/'
   return (
     <header
-      className={`pb-4 ${isHome ? '' : 'bg-secondary'} flex text-white justify-between pt-8 px-16`}>
-      <h1 className="font-main font-bold text-5xl">Washington Advert</h1>
+      className={`pb-4 ${isHome ? '' : 'bg-accent'} flex text-white justify-between pt-8 px-16`}>
+      <h1
+        className={`font-main font-bold  ${isHome ? 'text-5xl' : 'text-5xl'}`}>
+        Washington Advert
+      </h1>
       <Navbar />
     </header>
   )
