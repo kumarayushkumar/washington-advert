@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 
 export default function Hero() {
   return (
-    <div className="hero-wrapper px-16 ">
+    <div className="hero-wrapper ">
       <div className="header-wrapper">
         <Header />
       </div>

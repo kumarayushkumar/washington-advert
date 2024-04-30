@@ -186,7 +186,6 @@
 /* Services */
 #services {
   position: relative;
-
 }
 
 #services::before {
@@ -201,9 +200,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  filter: grayscale(75%) blur(4px);
+  /* filter: grayscale(75%); */
 }
-
 
 #services::after {
   overflow: hidden;
