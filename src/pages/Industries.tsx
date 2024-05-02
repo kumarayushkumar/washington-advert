@@ -11,6 +11,7 @@ import {
 import { RiGovernmentFill } from 'react-icons/ri'
 import { GiLipstick } from 'react-icons/gi'
 import { FaComputer } from 'react-icons/fa6'
+import PageHero from '@/components/PageHero'
 
 export function Industries() {
   const industries = [
@@ -76,19 +77,9 @@ export function Industries() {
     }
   ]
   return (
-    <section className="">
+    <section id="industries" className="">
       <div className="text-center text-whiteout bg-whiteout">
-        <div className="bg-accent">
-          <h1 className="text-5xl pt-6 md:pt-24 font-sub  font-semibold">
-            Industries We Serve
-          </h1>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 120">
-          <path
-            fill="#0A3D91"
-            fill-opacity="1"
-            d="M0,128L120,144C240,160,480,192,720,192C960,192,1200,160,1320,144L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-        </svg>
+        <PageHero heading="Industries We Serve" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-14 py-8 px-6 md:py-14 md:px-16 ">
           {industries.map((industry, index) => (
             <IndustriesCard
