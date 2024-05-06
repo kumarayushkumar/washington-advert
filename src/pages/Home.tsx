@@ -6,6 +6,7 @@ import LetsTalk from '@/components/home/LetsTalk'
 import Expertise from '@/components/home/Expertise'
 import Review from '@/components/home/Review'
 import Stats from '@/components/home/Stats'
+import SeoAudit from '@/components/home/SeoAudit'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <HomeOverview />
       <Stats />
+      <SeoAudit />
       <Client />
       <Expertise />
       <Review />
