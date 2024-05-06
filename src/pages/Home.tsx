@@ -4,7 +4,7 @@ import Hero from '@/components/home/Hero'
 import HomeOverview from '@/components/home/HomeOverview'
 import LetsTalk from '@/components/home/LetsTalk'
 import Expertise from '@/components/home/Expertise'
-import Testimonial from '@/components/home/Testimonial'
+import Review from '@/components/home/Review'
 import Stats from '@/components/home/Stats'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Stats />
       <Client />
       <Expertise />
-      <Testimonial />
+      <Review />
       <LetsTalk />
       <Footer />
     </>

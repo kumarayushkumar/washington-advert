@@ -1,4 +1,4 @@
-export default function Testimonial() {
+export default function Review() {
   return (
     <section
       id="tetimonials"

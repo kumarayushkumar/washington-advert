@@ -16,7 +16,7 @@ import { PPC } from './pages/services/PPC'
 import { LocalSEO } from './pages/services/LocalSEO'
 import { GMB } from './pages/services/GMB'
 import { Packages } from './pages/Packages'
-import { Testimonials } from './pages/Testimonials'
+import { Review } from './pages/Review'
 import { Industries } from './pages/Industries'
 import { ContactUs } from './pages/ContactUs'
 import { AboutUs } from './pages/AboutUs'
@@ -40,7 +40,7 @@ const router = createBrowserRouter(
           <Route path="gmb" element={<GMB />} />
         </Route>
         <Route path="packages" element={<Packages />} />
-        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="review" element={<Review />} />
         <Route path="industries" element={<Industries />} />
 
         <Route path="contact-us" element={<ContactUs />} />
