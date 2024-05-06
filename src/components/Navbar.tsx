@@ -15,8 +15,8 @@ export default function Navbar() {
       href: '/packages'
     },
     {
-      title: 'Testimonials',
-      href: '/testimonials'
+      title: 'Reviews',
+      href: '/review'
     },
     {
       title: 'Industries',
