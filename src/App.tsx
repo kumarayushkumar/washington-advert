@@ -8,7 +8,6 @@ import {
 import Home from './pages/Home'
 import Error from './pages/Error'
 import Layout from './layouts/Layout'
-import { Services } from './pages/services/Services'
 import { WebDesigning } from './pages/services/WebDesigning'
 import { SEO } from './pages/services/SEO'
 import { SocialMediaMarketing } from './pages/services/SocialMediaMarketing'
@@ -28,7 +27,6 @@ const router = createBrowserRouter(
 
       <Route element={<Layout />}>
         <Route path="services">
-          <Route index element={<Services />} />
           <Route path="web-designing" element={<WebDesigning />} />
           <Route path="seo" element={<SEO />} />
           <Route path="ppc" element={<PPC />} />
