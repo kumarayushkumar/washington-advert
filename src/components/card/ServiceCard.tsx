@@ -16,7 +16,7 @@ export default function ServiceCard({
   buttonText: string
 }) {
   return (
-    <div className="mt-16 backdrop-blur-md backdrop-filter">
+    <div className="mt-10 backdrop-blur-md backdrop-filter">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <Image className="md:hidden" image={image} title={title} />
         {index % 2 === 0 ? (

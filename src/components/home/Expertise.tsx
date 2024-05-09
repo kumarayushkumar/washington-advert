@@ -47,16 +47,16 @@ const services = [
 
 export default function Expertise() {
   return (
-    <section id="services" className="px-10 text-whiteout py-16 ">
+    <section id="services" className="px-10 text-whiteout py-10 md:py-14 ">
       <div className="relative z-10 container">
         <div className="text-center text-5xl font-semibold text-whiteout">
           Our Expertise
         </div>
-        <div className="pt-12 pb-8 md:pt-16 md:pb-14">
+        <div className="pt-12 pb-8 md:pt-10 md:pb-10">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
-              className="shadow-md p-5 bg-white"
+              className="shadow-md bg-white"
               index={index}
               title={service.title}
               description={service.description}
