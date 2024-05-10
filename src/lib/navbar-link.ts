@@ -28,31 +28,38 @@ export const services = [
 export const navLinks = [
   {
     title: 'Home',
-    href: '/'
+    href: '/',
+    bgColor: ''
   },
   {
     title: 'Services',
     href: '/services',
-    services
+    services,
+    bgColor: 'bg-accent'
   },
   {
     title: 'Packages',
-    href: '/packages'
+    href: '/packages',
+    bgColor: 'bg-accent'
   },
   {
     title: 'Reviews',
-    href: '/review'
+    href: '/review',
+    bgColor: 'bg-accent'
   },
   {
     title: 'Industries',
-    href: '/industries'
+    href: '/industries',
+    bgColor: 'bg-accent'
   },
   {
     title: 'About Us',
-    href: '/about-us'
+    href: '/about-us',
+    bgColor: 'bg-slate-700'
   },
   {
     title: 'Contact Us',
-    href: '/contact-us'
+    href: '/contact-us',
+    bgColor: 'bg-accent'
   }
 ]
