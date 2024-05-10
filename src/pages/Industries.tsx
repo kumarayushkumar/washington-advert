@@ -1,4 +1,3 @@
-import IndustriesCard from '@/components/card/IndustriesCard'
 import {
   FaBalanceScale,
   FaBook,
@@ -11,7 +10,9 @@ import {
 import { RiGovernmentFill } from 'react-icons/ri'
 import { GiLipstick } from 'react-icons/gi'
 import { FaComputer } from 'react-icons/fa6'
+
 import PageHero from '@/components/PageHero'
+import IndustriesCard from '@/components/card/IndustriesCard'
 
 export function Industries() {
   const industries = [

@@ -51,6 +51,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-1 font-sub text-lg font-medium">
+          <p className="underline text-sm mb-1">Links</p>
           {navLinks?.map((nav, index) => {
             return (
               <>
@@ -70,6 +71,7 @@ export default function Footer() {
           })}
         </div>
         <div className="flex flex-col gap-1 font-sub text-lg font-medium">
+          <p className="underline text-sm mb-1">Services</p>
           {services.map((nav, index) => {
             return (
               <Link
@@ -81,14 +83,15 @@ export default function Footer() {
             )
           })}
         </div>
-        <div className="col-span-2 text-xl font-medium flex flex-col gap-4">
+        <div className="col-span-2 text-xl font-medium flex flex-col">
+          <p className="underline text-sm mb-3">Contact Us</p>
           <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Mail size={24} className="" />
             <a href="mailto:info@washingtonadvert.com">
               info@washingtonadvert.com
             </a>
           </div>
-          <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
+          <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Phone size={24} className="" />
             <a href="tel:6263424118">6263424118</a>
           </div>

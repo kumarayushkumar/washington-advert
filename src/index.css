@@ -221,7 +221,7 @@
 }
 
 .big-name {
-  background-image: url('../public/assets/images/footer.jpg');
+  background-image: url('/assets/images/footer.jpg');
   background-attachment: fixed;
   background-clip: text;
   color: rgba(100, 200, 200, 0.25);
