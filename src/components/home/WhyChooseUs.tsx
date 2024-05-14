@@ -1,4 +1,4 @@
-import whyChooseUs from '/assets/images/why-choose-us.jpg'
+import whyChooseUs from '/assets/images/why-choose-us.webp'
 import { Button } from '../ui/button'
 import { MdHighQuality, MdOutlineEmojiPeople } from 'react-icons/md'
 import { IoCheckmarkCircle } from 'react-icons/io5'

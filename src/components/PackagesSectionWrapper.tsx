@@ -6,8 +6,8 @@ export default function PackagesSectionWrapper({
   title: string
 }) {
   return (
-    <section id="">
-      <div className="px-16 lg:px-20 xl:px-32">
+    <section id={title.toLowerCase().split(' ').join('-')}>
+      <div className="px-12 lg:px-20 xl:px-20 container">
         <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold">
           {title}
         </div>

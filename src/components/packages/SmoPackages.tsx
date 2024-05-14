@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Button } from '../ui/button'
 import { TiTick, TiTimes } from 'react-icons/ti'
+
+import bestSeller from '../../../public/assets/images/best-seller.webp'
+import { Button } from '../ui/button'
 import PackagesSectionWrapper from '../PackagesSectionWrapper'
 
 export default function SmoPackages() {
@@ -151,7 +153,12 @@ export default function SmoPackages() {
         {smoPackages.map((smoPackage, index) => (
           <div
             key={index}
-            className="flex-1 bg-white p-6 border border-secondary/60">
+            className="flex-1 bg-white p-6 border border-secondary/60 relative">
+            {index === 1 && (
+              <div className="best-sller absolute w-20 top-0 right-0 translate-x-[40%] -translate-y-[40%]">
+                <img src={bestSeller} alt="best seller" />
+              </div>
+            )}
             <div className="text-2xl font-semibold">{smoPackage.type}</div>
             <div className="text-xl mt-2 font-semibold">{smoPackage.price}</div>
             <Link to="/contact-us" className="block my-5">

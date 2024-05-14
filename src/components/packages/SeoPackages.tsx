@@ -1,6 +1,8 @@
 import { TiTick, TiTimes } from 'react-icons/ti'
-import { Button } from '../ui/button'
 import { Link } from 'react-router-dom'
+
+import bestSeller from '../../../public/assets/images/best-seller.webp'
+import { Button } from '../ui/button'
 import PackagesSectionWrapper from '../PackagesSectionWrapper'
 
 export default function SeoPackages() {
@@ -301,16 +303,120 @@ export default function SeoPackages() {
           Chat: true
         }
       }
+    },
+    {
+      type: 'Enterprise',
+      price: '$1800/Month',
+      description: {
+        'No. of Keywords': 100,
+        'Landing Pages': 20,
+        'Backlinks(per month)': 600
+      },
+      points: {
+        'First Hand SEO Analysis': {
+          'Pre-Optimization Website Analysis': true,
+          'Competitor Analysis': true,
+          'Keyword Research & Analysis': true,
+          'Baseline Ranking Check': true,
+          'Duplicate Content Check': true,
+          'Google Penalty Check': true,
+          'Back Link Analysis (If required)': true
+        },
+        'On-page Optimization Activities': {
+          'Website Canonical Check': true,
+          'Title Tag Optimization': true,
+          'META Tags Optimization': true,
+          'Heading Tags Optimization': true,
+          'Image Alt Tags Optimization': true,
+          'Content Optimization': true,
+          'SEO Friendly URL Setup': true,
+          'Site Navigation Analysis': true,
+          '404 Page Implementation': true,
+          'Broken Links Check': true,
+          'Website Speed Check': true,
+          'Google Indexed Pages Check': true,
+          'Robots.txt Creation': true,
+          'Google XML Sitemap': true,
+          'php Sitemap Setup': true,
+          'Google Webmasters Tool Setup': true,
+          'Google Analytics Setup': true,
+          'Structured Data Setup': false,
+          'On Site Blog Section Creation': true,
+          'On Site Blog Posting (Draft Copy) – Applicable from 3rd month': 3
+        },
+        'Off-page Optimization Activities': {
+          'Search Engine Submission': 40,
+          'Article Writing': 6,
+          'Article Posting': 6,
+          'Article Bookmarking': 40,
+          'Classified Submissions': 80,
+          'Business Listing': 10,
+          'Blog Writing': 6,
+          'Blog Posting': 6,
+          'Blog Bookmarking': 80,
+          'On page Blog': 6,
+          'On Page Blog Bookmarking': 80,
+          'Image sharing': 40,
+          'PPT Submissions': 8,
+          'PPT Bookmarking': 40,
+          'Social Bookmarking': 80,
+          'PDF Sharing': 6,
+          'PDF Bookmarking': 40,
+          'Profile Creation': 10,
+          'Quora Answering': 10,
+          'Info Graphic Creation': 6,
+          'Info Graphic Bookmarking': 50,
+          'Video Marketing (if Client provides)': true,
+          'Press Release (If Client Provides News)': true
+        },
+        'SMO Activities': {
+          Facebook: {
+            'Facebook Profile Creation': true,
+            'Facebook Fan Page Creation': true,
+            'Facebook Posting & Sharing': 16
+          },
+          Instagram: {
+            'Instagram Business Profile Creation': true,
+            'Creation of Interactive Branded Hashtag': true,
+            'Instagram Posting': 8
+          },
+          Twitter: {
+            'Twitter Profile Creation': true,
+            'Twitter Post': 16
+          },
+          Pinterest: {
+            'Account Creation/Management': true,
+            'Pinterest Followers': true,
+            'Updating of pin boards': 8,
+            'Pins (If Client Provides Images)': true
+          }
+        },
+        Reports: {
+          'Monthly Website Analytics Report': true,
+          'Monthly Keywords Ranking Report': true,
+          'Monthly Off Page Submission Report': true
+        },
+        'Customer Support': {
+          Email: true,
+          Phone: true,
+          Chat: true
+        }
+      }
     }
   ]
 
   return (
     <PackagesSectionWrapper title="SEO Packages">
-      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">
+      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8 relative">
         {seoPackages.map((seoPackage, index) => (
           <div
             key={index}
-            className="flex-1 bg-white p-6 border border-secondary/60">
+            className={`flex-1 bg-white p-6 border border-secondary/60 relative`}>
+            {index === 1 && (
+              <div className="best-sller absolute w-20 top-0 right-0 translate-x-[40%] -translate-y-[40%]">
+                <img src={bestSeller} alt="best seller" />
+              </div>
+            )}
             <div className="text-2xl font-semibold">{seoPackage.type}</div>
             <div className="text-xl mt-2 font-semibold">{seoPackage.price}</div>
             <Link to="/contact-us" className="block my-5">
