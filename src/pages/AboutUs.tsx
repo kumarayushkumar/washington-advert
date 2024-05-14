@@ -1,3 +1,7 @@
+import { Link } from 'react-router-dom'
+
+import { Button } from '@/components/ui/button'
+
 export function AboutUs() {
   return (
     <section className="bg-whiteout" id="about-us">
@@ -90,6 +94,15 @@ export function AboutUs() {
             Contact us today to schedule a consultation and discover how we can
             help you achieve your business goals.
           </p>
+        </div>
+        <div className="flex justify-end mt-12">
+          <Link to="/contact-us" className="">
+            <Button
+              className="font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"
+              size={'lg'}>
+              Say hi!
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

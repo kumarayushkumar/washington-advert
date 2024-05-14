@@ -144,67 +144,7 @@ export default function SmoPackages() {
       }
     }
   ]
-  // return (
-  //   <section id='smo-packages'>
-  //     <div className="px-16 lg:px-20 xl:px-32">
-  //       <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold">
-  //         SMO Packages
-  //       </div>
-  //       <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">
-  //         {smoPackages.map((smoPackage, index) => (
-  //           <div
-  //             key={index}
-  //             className="flex-1 bg-white p-6 border border-secondary/60">
-  //             <div className="text-2xl font-semibold">{smoPackage.type}</div>
-  //             <div className="text-xl mt-2 font-semibold">
-  //               {smoPackage.price}
-  //             </div>
-  //             <Link to="/contact-us" className="block my-5">
-  //               <Button
-  //                 className="w-full font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"
-  //                 size={'lg'}>
-  //                 Get started
-  //               </Button>
-  //             </Link>
-  //             <div className="mt-4">
-  //               {Object.entries(smoPackage.points).map(
-  //                 ([key, value], index) => (
-  //                   <div key={index}>
-  //                     <div className="text-lg mt-6 font-semibold">{key}</div>
-  //                     <div className="mt-2">
-  //                       {Object.entries(value).map(([key, value], index) => (
-  //                         <div
-  //                           key={index}
-  //                           className="flex justify-between items-center leading-7">
-  //                           <div className="font-medium">{key}</div>
-  //                           <div>
-  //                             {typeof value === 'number' ? (
-  //                               <p className="font-semibold text-lg tracking-wider font-main">
-  //                                 {value}
-  //                               </p>
-  //                             ) : (
-  //                               <>
-  //                                 {value ? (
-  //                                   <TiTick className="text-green-500" />
-  //                                 ) : (
-  //                                   <TiTimes className="text-red-500" />
-  //                                 )}
-  //                               </>
-  //                             )}
-  //                           </div>
-  //                         </div>
-  //                       ))}
-  //                     </div>
-  //                   </div>
-  //                 )
-  //               )}
-  //             </div>
-  //           </div>
-  //         ))}
-  //       </div>
-  //     </div>
-  //   </section>
-  // )
+
   return (
     <PackagesSectionWrapper title="SMO Packages">
       <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">

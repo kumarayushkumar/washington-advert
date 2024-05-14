@@ -83,7 +83,7 @@ export function ContactUsForm() {
             <FormItem>
               <FormControl>
                 <div className="flex gap-1 md:gap-4 items-center">
-                  <CiUser className="text-4xl" />
+                  <CiUser className="text-3xl" />
                   <Input
                     className="border-accent"
                     placeholder="Name"
