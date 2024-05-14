@@ -10,10 +10,7 @@ export default function Header() {
   return (
     <header
       className={`pb-4 ${bgColor} flex text-white justify-between pt-8 px-16`}>
-      <h1
-        className={`font-main font-bold text-5xl`}>
-        Washington Advert
-      </h1>
+      <h1 className={`font-main font-bold text-5xl`}>Washington Advert</h1>
       <Navbar />
     </header>
   )

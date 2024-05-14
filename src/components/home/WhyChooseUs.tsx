@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
               <p className="text-4xl font-main">
                 Why should choose our agency?
               </p>
-              <div className='text-lg flex flex-col gap-4 md:mt-8'>
+              <div className="text-lg flex flex-col gap-4 md:mt-8">
                 <p className="">
                   <strong>Proven Results: </strong>
                   Experience measurable success with our proven track record of

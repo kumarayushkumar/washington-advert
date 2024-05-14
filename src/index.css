@@ -250,3 +250,43 @@
   filter: grayscale(90%);
   z-index: -1;
 }
+
+/* Contact Us */
+.contact-us-hero {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-us-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/contact-us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  z-index: -1;
+}
+
+.contact-us-form-wrapper {
+  background-image: linear-gradient(
+    to left top,
+    #e3242b,
+    #e90057,
+    #e00081,
+    #c82fa8,
+    #a04dc8,
+    #8355cc,
+    #615ace,
+    #345ecc,
+    #2b56bd,
+    #214dae,
+    #17459f,
+    #0a3d91
+  );
+}
