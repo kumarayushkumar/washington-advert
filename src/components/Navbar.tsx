@@ -30,9 +30,11 @@ export default function Navbar() {
                         }[]
                       ).map((item, index) => {
                         return (
-                          <DropdownMenuItem key={index}>
-                            <Link to={item.href}>{item.title}</Link>
-                          </DropdownMenuItem>
+                          <Link to={item.href}>
+                            <DropdownMenuItem key={index}>
+                              {item.title}
+                            </DropdownMenuItem>
+                          </Link>
                         )
                       })}
                     </DropdownMenuContent>
