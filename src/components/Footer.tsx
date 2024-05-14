@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import { Mail, Phone } from 'lucide-react'
 
 import { navLinks, services } from '@/lib/navbar-link'
+import { CONSTANTS } from '@/utils/constants'
 
 export default function Footer() {
   const socialMedia = [
@@ -87,13 +88,19 @@ export default function Footer() {
           <p className="underline text-sm mb-3">Contact Us</p>
           <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Mail size={24} className="" />
-            <a href="mailto:info@washingtonadvert.com">
-              info@washingtonadvert.com
+            <a
+              aria-label={`Send us an email on ${CONSTANTS.EMAIL}`}
+              href={`mailto:${CONSTANTS.EMAIL}`}>
+              {CONSTANTS.EMAIL}
             </a>
           </div>
           <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Phone size={24} className="" />
-            <a href="tel:6263424118">6263424118</a>
+            <a
+              aria-label={`Call us on ${CONSTANTS.PHONE}`}
+              href={`tel:${CONSTANTS.PHONE}`}>
+              {CONSTANTS.PHONE}
+            </a>
           </div>
         </div>
       </div>
@@ -103,6 +110,7 @@ export default function Footer() {
             key={index}
             href={social.url}
             target="_blank"
+            aria-label={`Visit our ${social.name} page`}
             rel="noreferrer"
             className="hover:text-amber-300 hover:scale-105 text-amber-100 text-4xl">
             {social.icon}

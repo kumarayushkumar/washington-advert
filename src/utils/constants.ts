@@ -14,5 +14,7 @@ export const CONSTANTS = {
   MESSAGE: {
     min: 10,
     max: 500
-  }
+  },
+  PHONE: 6263424118,
+  EMAIL: 'info@washingtonadvert.com'
 }
