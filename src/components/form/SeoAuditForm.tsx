@@ -1,7 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { DevTool } from '@hookform/devtools'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -102,9 +101,6 @@ export function SeoAuditForm() {
           Submit
         </Button>
       </form>
-      {import.meta.env.VITE_ENVIRONMENT !== 'production' && (
-        <DevTool control={form.control} />
-      )}
     </Form>
   )
 }
