@@ -14,32 +14,34 @@ export default function Navbar() {
       <ul className="flex justify-between gap-6 items-center">
         {navLinks.map((nav, index) => {
           return (
-            <Link key={index} to={nav.href}>
-              {Object.prototype.hasOwnProperty.call(
-                nav,
-                nav.title.toLowerCase()
-              ) ? (
-                <DropdownMenu>
-                  <DropdownMenuTrigger>Services</DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    {(
-                      nav[nav.title.toLowerCase() as keyof typeof nav] as {
-                        title: string
-                        href: string
-                      }[]
-                    ).map((item, index) => {
-                      return (
-                        <DropdownMenuItem key={index}>
-                          <Link to={item.href}>{item.title}</Link>
-                        </DropdownMenuItem>
-                      )
-                    })}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              ) : (
-                <div className="">{nav.title}</div>
-              )}
-            </Link>
+            <li>
+              <Link key={index} to={nav.href}>
+                {Object.prototype.hasOwnProperty.call(
+                  nav,
+                  nav.title.toLowerCase()
+                ) ? (
+                  <DropdownMenu>
+                    <DropdownMenuTrigger>Services</DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      {(
+                        nav[nav.title.toLowerCase() as keyof typeof nav] as {
+                          title: string
+                          href: string
+                        }[]
+                      ).map((item, index) => {
+                        return (
+                          <DropdownMenuItem key={index}>
+                            <Link to={item.href}>{item.title}</Link>
+                          </DropdownMenuItem>
+                        )
+                      })}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                ) : (
+                  <div className="">{nav.title}</div>
+                )}
+              </Link>
+            </li>
           )
         })}
       </ul>
