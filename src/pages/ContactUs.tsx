@@ -37,16 +37,18 @@ export function ContactUs() {
           </p>
           <div className="flex mt-20 justify-between">
             {list.map((item, index) => (
-              <>
+              <div key={index}>
                 {item.title === 'divider' ? (
-                  <span className="border-[0.5px] border-slate-200/80"></span>
+                  <span
+                    key={index}
+                    className="border-[0.5px] border-slate-200/80"></span>
                 ) : (
                   <div key={index} className="flex flex-col gap-[0.125rem]">
                     <p className="">{item.title}</p>
                     <p className="text-lg font-semibold">{item.description}</p>
                   </div>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>

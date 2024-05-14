@@ -6,9 +6,9 @@ import {
   FaWhatsapp
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { Mail, Phone } from 'lucide-react'
 
 import { navLinks, services } from '@/lib/navbar-link'
-import { Mail, Phone } from 'lucide-react'
 
 export default function Footer() {
   const socialMedia = [
@@ -54,7 +54,7 @@ export default function Footer() {
           <p className="underline text-sm mb-1">Links</p>
           {navLinks?.map((nav, index) => {
             return (
-              <>
+              <div key={index}>
                 {!Object.prototype.hasOwnProperty.call(
                   nav,
                   nav.title.toLowerCase()
@@ -66,7 +66,7 @@ export default function Footer() {
                     {nav.title}
                   </Link>
                 ) : null}
-              </>
+              </div>
             )
           })}
         </div>
@@ -98,9 +98,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="social-media bg-[#16161d] mb-6 mt-8 md:mb-12 md:mt-14 flex justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16 py-6 text-whiteout">
-        {socialMedia.map(social => (
+        {socialMedia.map((social, index) => (
           <a
-            key={social.name}
+            key={index}
             href={social.url}
             target="_blank"
             rel="noreferrer"

@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { DevTool } from '@hookform/devtools'
+// import { DevTool } from '@hookform/devtools'
 import { CiChat1, CiPhone, CiUser } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
 
@@ -161,9 +161,9 @@ export function ContactUsForm() {
           </Button>
         </div>
       </form>
-      {import.meta.env.VITE_ENVIRONMENT !== 'production' && (
+      {/* {import.meta.env.VITE_ENVIRONMENT !== 'production' && (
         <DevTool control={form.control} />
-      )}
+      )} */}
     </Form>
   )
 }

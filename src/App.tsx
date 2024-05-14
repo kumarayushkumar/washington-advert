@@ -37,6 +37,7 @@ const router = createBrowserRouter(
           <Route path="local-seo" element={<LocalSEO />} />
           <Route path="gmb" element={<GMB />} />
         </Route>
+
         <Route path="packages" element={<Packages />} />
         <Route path="review" element={<Review />} />
         <Route path="industries" element={<Industries />} />

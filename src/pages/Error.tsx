@@ -9,7 +9,7 @@ export default function Error() {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       navigate('/', { replace: true })
-    }, 3000)
+    }, 2500)
 
     return () => clearTimeout(redirectTimeout)
   }, [navigate])

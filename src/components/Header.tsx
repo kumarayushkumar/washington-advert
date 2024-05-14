@@ -5,7 +5,7 @@ import { navLinks } from '@/lib/navbar-link'
 export default function Header() {
   const location = useLocation()
   const bgColor = navLinks.find(
-    link => link.href === location.pathname
+    link => link.href.split('/')[1] === location.pathname.split('/')[1]
   )?.bgColor
   return (
     <header
