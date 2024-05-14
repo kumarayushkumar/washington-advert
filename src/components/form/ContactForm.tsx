@@ -53,7 +53,8 @@ export function ContactUsForm() {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       name: '',
-      email: ''
+      email: '',
+      message: ''
     }
   })
 
@@ -61,7 +62,7 @@ export function ContactUsForm() {
     toast({
       title: 'You submitted the following values:',
       description: (
-        <pre className="mt-2 w-7240px] rounded-md bg-slate-950 p-4">
+        <pre className="mt-2 rounded-md bg-slate-950 p-4">
           <code className="text-white text-xs">
             {JSON.stringify(data, null, 2)}
           </code>
@@ -74,7 +75,7 @@ export function ContactUsForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-5 mt-8 mx-auto">
+        className="flex flex-col gap-5 mt-8 w-full">
         <FormField
           control={form.control}
           name="name"
@@ -103,7 +104,7 @@ export function ContactUsForm() {
                 <div className="flex gap-1 md:gap-4 items-center">
                   <CiMail className="text-3xl" />
                   <Input
-                    className="w-72 border-accent"
+                    className="border-accent"
                     placeholder="Email"
                     {...field}
                   />
@@ -122,7 +123,7 @@ export function ContactUsForm() {
                 <div className="flex gap-1 md:gap-4 items-center">
                   <CiPhone className="text-3xl" />
                   <Input
-                    className="w-72 border-accent"
+                    className="border-accent"
                     placeholder="Phone number"
                     {...field}
                   />
@@ -141,7 +142,7 @@ export function ContactUsForm() {
                 <div className="flex gap-1 md:gap-4 items-center">
                   <CiChat1 className="text-3xl" />
                   <Input
-                    className="w-72 border-accent"
+                    className="border-accent"
                     placeholder="Message"
                     {...field}
                   />

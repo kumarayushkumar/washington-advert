@@ -29,7 +29,7 @@ export function ContactUs() {
           <p className="text-xl mt-4">It's never too late</p>
         </div>
       </div>
-      <div className="py-6 lg:py-14 px-6 lg:px-40 contact-us-form-wrapper grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="py-6 lg:py-14 px-6 md:px-16 lg:px-10 xl:px-40 contact-us-form-wrapper grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="col-span-1 py-12 text-white">
           <p className="uppercase text-xl">TAKE THE SILK ROAD TO</p>
           <p className="text-6xl md:mt-8 font-sub font-semibold">
@@ -51,14 +51,14 @@ export function ContactUs() {
           </div>
         </div>
         <div className="col-span-1">
-          <div className="bg-white py-12 px-12">
+          <div className="bg-white py-12 px-12 md:max-w-[80%] mx-auto lg:w-full">
             <p className="font-highlight text-xl">
               Let's grow your Brand Online
             </p>
             <p className="mt-2 lg:mt-3 text-3xl font-semibold">
               Start a conversation with us
             </p>
-            <div className="bg-white flex items-center mx-auto">
+            <div className="bg-white flex items-center ">
               <ContactUsForm />
             </div>
           </div>
