@@ -200,9 +200,9 @@ export function GMB() {
               <div
                 key={index}
                 className="border-2 border-secondary/50 px-4 py-6 rounded-lg flex flex-col gap-2 items-center text-center">
-                <div className="text-4xl">{expertise.icon}</div>
-                <p className="font-semibold text-lg">{expertise.title}</p>
-                <p className="mt-1">{expertise.description}</p>
+                <div className="text-4xl text-accent">{expertise.icon}</div>
+                <p className="font-semibold text-lg mt-2">{expertise.title}</p>
+                <p className="">{expertise.description}</p>
               </div>
             ))}
           </div>
