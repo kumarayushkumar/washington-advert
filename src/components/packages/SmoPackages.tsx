@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { TiTick, TiTimes } from 'react-icons/ti'
 
-import bestSeller from '../../../public/assets/images/best-seller.webp'
+import bestSeller from '/assets/images/best-seller.webp'
 import { Button } from '../ui/button'
 import PackagesSectionWrapper from '../PackagesSectionWrapper'
 

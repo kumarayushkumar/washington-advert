@@ -19,6 +19,7 @@ import { Review } from './pages/Review'
 import { Industries } from './pages/Industries'
 import { ContactUs } from './pages/ContactUs'
 import { AboutUs } from './pages/AboutUs'
+import { useEffect } from 'react'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -52,5 +53,11 @@ const router = createBrowserRouter(
 )
 
 export default function App() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0)
+    }
+  })
+
   return <RouterProvider router={router} />
 }
