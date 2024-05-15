@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom'
 
 import PageHero from '@/components/PageHero'
-import gmbService from '/assets/images/gmb-service.jpg'
+import gmbService from '/assets/images/services/gmb.webp'
 import { Button } from '@/components/ui/button'
 
 export function GMB() {
