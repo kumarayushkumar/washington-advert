@@ -94,14 +94,14 @@ export default function Footer() {
               {CONSTANTS.EMAIL}
             </a>
           </div>
-          <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
+          {/* <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Phone size={24} className="" />
             <a
               aria-label={`Call us on ${CONSTANTS.PHONE}`}
               href={`tel:${CONSTANTS.PHONE}`}>
               {CONSTANTS.PHONE}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="social-media bg-[#16161d] mb-6 mt-8 md:mb-12 md:mt-14 flex justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16 py-6 text-whiteout">
