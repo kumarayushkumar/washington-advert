@@ -106,8 +106,12 @@
     scrollbar-width: 0;
   }
   body {
-    @apply bg-whiteout text-foreground;
+    @apply bg-whiteout text-foreground no-scrollbar;
     font-family: 'Open sans', sans-serif;
+    scrollbar-width: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
   }
 }
 

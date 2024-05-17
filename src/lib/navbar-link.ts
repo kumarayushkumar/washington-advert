@@ -53,13 +53,13 @@ export const navLinks = [
     bgColor: 'bg-accent'
   },
   {
-    title: 'Contact Us',
-    href: '/contact-us',
-    bgColor: 'bg-accent'
-  },
-  {
     title: 'About Us',
     href: '/about-us',
     bgColor: 'bg-slate-700'
+  },
+  {
+    title: 'Contact Us',
+    href: '/contact-us',
+    bgColor: 'bg-accent'
   }
 ]
