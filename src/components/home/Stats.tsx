@@ -26,8 +26,8 @@ export default function Stats() {
     }
   ]
   return (
-    <section id="stats" className=" bg-white py-8 md:py-14 ">
-      <div className="flex justify-around">
+    <section id="stats" className=" bg-white py-6 md:py-14 ">
+      <div className="md:flex justify-around grid grid-cols-2 gap-4 px-5">
         {stats.map((stat, index) => (
           <StatsCard
             key={index}

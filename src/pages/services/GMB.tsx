@@ -193,8 +193,10 @@ export function GMB() {
           </p>
         </div>
 
-        <div className='mt-16'>
-          <div className='text-center text-4xl font-semibold my-8'>We have expertise in</div>
+        <div className="mt-16">
+          <div className="text-center text-4xl font-semibold my-8">
+            We have expertise in
+          </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
             {gmbExpertise.map((expertise, index) => (
               <div

@@ -57,7 +57,9 @@ export function SeoAuditForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-2">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="flex flex-col lg:flex-row gap-2">
         <FormField
           control={form.control}
           name="websiteURL"

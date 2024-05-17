@@ -1,9 +1,9 @@
-import services1 from '/assets/images/services/services-1.webp'
-import services2 from '/assets/images/services/services-2.webp'
-import services3 from '/assets/images/services/services-3.webp'
-import services4 from '/assets/images/services/services-4.webp'
-import services5 from '/assets/images/services/services-5.webp'
-import services6 from '/assets/images/services/services-6.webp'
+import services1 from '/assets/images/services/home/services-1.webp'
+import services2 from '/assets/images/services/home/services-2.webp'
+import services3 from '/assets/images/services/home/services-3.webp'
+import services4 from '/assets/images/services/home/services-4.webp'
+import services5 from '/assets/images/services/home/services-5.webp'
+import services6 from '/assets/images/services/home/services-6.webp'
 import ServiceCard from '../card/ServiceCard'
 
 const services = [
@@ -47,12 +47,12 @@ const services = [
 
 export default function Expertise() {
   return (
-    <section id="services" className="px-10 text-whiteout py-10 md:py-14 ">
+    <section id="services" className="md:px-10 text-whiteout py-10 md:py-14 ">
       <div className="relative z-10 container">
         <div className="text-center text-5xl font-semibold text-whiteout">
           Our Expertise
         </div>
-        <div className="pt-12 pb-8 md:pt-10 md:pb-10">
+        <div className="pb-8 md:pt-10 md:pb-10">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

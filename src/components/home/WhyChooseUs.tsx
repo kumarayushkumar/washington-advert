@@ -1,4 +1,4 @@
-import whyChooseUs from '/assets/images/why-choose-us.webp'
+import whyChooseUs from '/assets/images/home/why-choose-us.webp'
 import { Button } from '../ui/button'
 import { MdHighQuality, MdOutlineEmojiPeople } from 'react-icons/md'
 import { IoCheckmarkCircle } from 'react-icons/io5'
@@ -19,8 +19,8 @@ export default function WhyChooseUs() {
     }
   ]
   return (
-    <section id="why-choose-us" className="pt-14 pb-12 bg-whiteout">
-      <div className="px-16 container">
+    <section id="why-choose-us" className="py-8 md:pt-14 md:pb-12 bg-whiteout">
+      <div className="px-6 md:px-16 container">
         <div className="flex flex-col md:flex-row md:gap-14">
           <div className="flex flex-col justify-between">
             <div className="">
@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
               </Button>
             </div>
           </div>
-          <div className="shadow-lg md:max-w-[40%]">
+          <div className="shadow-lg md:max-w-[40%] mt-10 md:mt-0">
             <img
               src={whyChooseUs}
               className="w-full h-full object-cover object-center mx-auto "
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
         </div>
       </div>
       <span className="h-1 block bg-accent my-4 md:my-8"></span>
-      <div className="flex justify-between px-8 md:px-20 pt-2">
+      <div className="flex justify-between px-4 md:px-20 pt-2">
         {whyChooseUsPoints.map((point, index) => (
           <div key={index} className="flex items-center gap-2 md:gap-4">
             <span className="rounded-full border-2 border-secondary">
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                 {point.icon}
               </div>
             </span>
-            <p className="font-medium text-xs md:text-lg lg:text-xl font-sub">
+            <p className="font-medium text-xs md:text-lg lg:text-xl font-sub leading-none md:leading-6">
               {point.title}
             </p>
           </div>

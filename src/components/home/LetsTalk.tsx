@@ -1,4 +1,4 @@
-import img from '/assets/images/lets-talk.webp'
+import img from '/assets/images/home/lets-talk.webp'
 import { Link } from 'react-router-dom'
 
 export default function LetsTalk() {

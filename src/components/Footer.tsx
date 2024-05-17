@@ -6,7 +6,7 @@ import {
   FaWhatsapp
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Mail, Phone } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 import { navLinks, services } from '@/lib/navbar-link'
 import { CONSTANTS } from '@/utils/constants'
