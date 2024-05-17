@@ -95,7 +95,7 @@ export function AboutUs() {
             help you achieve your business goals.
           </p>
         </div>
-        <div className="flex justify-end mt-12">
+        <div className="flex justify-end mt-6 md:mt-8 xl:mt-10">
           <Link to="/contact-us" className="">
             <Button
               className="font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"
