@@ -153,7 +153,8 @@
 }
 
 /* Let's talk */
-.lets-talk-action-wrapper {
+.lets-talk-action-wrapper,
+.ranking-wrapper {
   background-image: linear-gradient(
     to right bottom,
     #4169e1,

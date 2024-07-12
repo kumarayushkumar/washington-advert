@@ -15,6 +15,10 @@ export const CONSTANTS = {
     min: 10,
     max: 500
   },
-  PHONE: 0,
-  EMAIL: 'info@washingtonadvert.com'
+  PHONE: '+1(833)233-1722',
+  EMAIL: 'info@washingtonadvert.com',
+  ADDRESS: {
+    TEXT: '4315 50th Street NW Suite 100, Washington',
+    URL: 'https://g.co/kgs/tQtZ2QW'
+  }
 }

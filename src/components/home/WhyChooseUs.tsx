@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
     }
   ]
   return (
-    <section id="why-choose-us" className="py-8 md:pt-14 md:pb-12 bg-whiteout">
+    <section id="why-choose-us" className="py-8 md:pt-16 md:pb-12 bg-whiteout">
       <div className="px-6 md:px-16 container">
         <div className="flex flex-col md:flex-row md:gap-14">
           <div className="flex flex-col justify-between">

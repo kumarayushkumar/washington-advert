@@ -1,8 +1,8 @@
+import { TiTick, TiTimes } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
 
 import PackagesSectionWrapper from '../PackagesSectionWrapper'
 import { Button } from '../ui/button'
-import { TiTick, TiTimes } from 'react-icons/ti'
 
 export default function PpcPackages() {
   const ppcPackages = [

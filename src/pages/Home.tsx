@@ -6,6 +6,7 @@ import Expertise from '@/components/home/Expertise'
 import Stats from '@/components/home/Stats'
 import SeoAudit from '@/components/home/SeoAudit'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
+import Ranking from '@/components/home/Ranking'
 
 export default function Home() {
   return (
@@ -13,9 +14,9 @@ export default function Home() {
       <Hero />
       <HomeOverview />
       <Stats />
-      {/* <Client /> */}
       <WhyChooseUs />
       <Expertise />
+      <Ranking />
       <SeoAudit />
       <LetsTalk />
       <Footer />

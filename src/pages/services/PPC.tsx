@@ -89,7 +89,7 @@ export function PPC() {
           ))}
         </div>
         <GetStartedCard
-        className='bg-amber-400 text-slate-800 '
+          className="bg-amber-400 text-slate-800 "
           content="Ready to take your business to
           the next level? Our tailored digital marketing strategies are designed
           to boost your online presence and drive growth. Schedule a
