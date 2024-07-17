@@ -32,10 +32,10 @@ export function ContactUs() {
       <div className="py-6 lg:py-14 px-6 md:px-16 lg:px-10 xl:px-40 contact-us-form-wrapper grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="col-span-1 py-12 text-white">
           <p className="uppercase text-xl">TAKE THE SILK ROAD TO</p>
-          <p className="text-6xl md:mt-8 font-sub font-semibold">
+          <p className="text-4xl md:text-6xl mt-4 md:mt-8 font-sub font-semibold">
             Digitizing Your Business Growth
           </p>
-          <div className="flex mt-20 justify-between">
+          <div className="flex mt-12 md:mt-20 justify-between">
             {list.map((item, index) => (
               <div key={index}>
                 {item.title === 'divider' ? (
@@ -57,7 +57,7 @@ export function ContactUs() {
             <p className="font-highlight text-xl">
               Let's grow your Brand Online
             </p>
-            <p className="mt-2 lg:mt-3 text-3xl font-semibold">
+            <p className="mt-2 lg:mt-3 text-2xl md:text-3xl font-medium md:font-semibold">
               Start a conversation with us
             </p>
             <div className="bg-white flex items-center ">
