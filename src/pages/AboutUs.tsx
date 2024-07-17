@@ -6,16 +6,16 @@ export function AboutUs() {
   return (
     <section className="bg-whiteout" id="about-us">
       <div className="about-us-hero">
-        <div className="px-64 py-44 text-whiteout font-highlight font-bold container">
+        <div className="px-12 lg:px-64 py-16 lg:py-44 text-whiteout font-highlight font-bold container">
           <p className="text-xl">Who we are</p>
-          <p className="text-[2.5rem] mt-4">
+          <p className="text-3xl md:text-[2.5rem] mt-4">
             Designers, thinkers & collaborators
           </p>
         </div>
       </div>
       <div className="container py-10 lg:py-16 lg:px-56 font-medium text-slate-700">
         <div className="">
-          <p className="text-rose-600 font-semibold text-xl">
+          <p className="text-rose-600 font-semibold text-lg sm:text-xl">
             At Washington Advert, we're passionate about helping businesses
             thrive in the digital landscape. With years of experience in digital
             marketing and lead generation, we've honed our skills to deliver

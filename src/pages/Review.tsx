@@ -254,7 +254,7 @@ export function Review() {
           <CarouselContent className="">
             {reviews.map((review, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="flex flex-col justify-between px-6 ">
+                <div className="flex flex-col justify-between px-2 sm:px-4 md:px-6">
                   <div>
                     <Quote className="text-accent" size={40} />
                     <p className="mt-4 md:mt-6 text-lg font-light leading-7">
