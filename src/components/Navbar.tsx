@@ -20,7 +20,10 @@ export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
   return (
     <nav className="flex font-sub text-center items-center text-md font-medium">
       <div className="lg:hidden flex items-center">
-        <button onClick={toggleMenu} className="focus:outline-none">
+        <button
+          aria-label="toggle navbar"
+          onClick={toggleMenu}
+          className="focus:outline-none">
           {isOpen ? (
             <XIcon className="h-7 w-7 sm:h-8 sm:w-8" />
           ) : (
