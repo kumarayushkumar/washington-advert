@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
 import { navLinks } from '@/lib/navbar-link'
 
-export default function Header() {
+export default function Header({ toggleZIndex }: { toggleZIndex: () => void }) {
   const location = useLocation()
   const bgColor = navLinks.find(
     link => link.href.split('/')[1] === location.pathname.split('/')[1]
@@ -13,7 +13,7 @@ export default function Header() {
       <h1 className={`font-main font-medium md:font-bold text-3xl md:text-5xl`}>
         Washington Advert
       </h1>
-      <Navbar />
+      <Navbar toggleZIndex={toggleZIndex} />
     </header>
   )
 }

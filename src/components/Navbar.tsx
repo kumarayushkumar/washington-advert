@@ -9,11 +9,12 @@ import {
 import { navLinks } from '@/lib/navbar-link'
 import { MenuIcon, XIcon } from 'lucide-react'
 
-export default function Navbar() {
+export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
+    toggleZIndex()
   }
 
   return (
