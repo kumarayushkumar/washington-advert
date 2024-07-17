@@ -57,11 +57,11 @@ export function WebDesigning() {
       <div className="text-center text-whiteout bg-whiteout">
         <PageHero heading="Web Designing" />
       </div>
-      <div className="container px-20 my-14">
+      <div className="container px-10 md:px-20 my-10 sm:my-12 md:my-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-4xl font-semibold font-highlight">
+              <h1 className="text-3xl sm:text-4xl font-semibold font-highlight">
                 Website Design Services
               </h1>
               <div className="mt-8 leading-8 text-lg font-medium">
@@ -82,7 +82,7 @@ export function WebDesigning() {
             </div>
             <Link to="/contact-us">
               <Button
-                className="text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-semibold"
+                className="mt-6 lg:mt-0 text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-semibold"
                 size="lg">
                 Get Started
               </Button>

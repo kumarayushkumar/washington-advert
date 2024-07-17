@@ -2,7 +2,7 @@ export default function PageHero({ heading }: { heading: string }) {
   return (
     <>
       <div className="bg-accent">
-        <h1 className="text-5xl pt-6 md:pt-24 font-sub  font-semibold">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl py-6 md:pt-24 font-sub font-medium md:font-semibold">
           {heading}
         </h1>
       </div>
