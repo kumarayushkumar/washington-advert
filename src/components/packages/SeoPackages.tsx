@@ -407,18 +407,22 @@ export default function SeoPackages() {
 
   return (
     <PackagesSectionWrapper title="SEO Packages">
-      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8 relative">
+      <div className="grid md:grid-cols-4 gap-6 mt-4 lg:mt-6 xl:mt-8 relative">
         {seoPackages.map((seoPackage, index) => (
           <div
             key={index}
             className={`flex-1 bg-white p-6 border border-secondary/60 relative`}>
             {index === 1 && (
-              <div className="best-sller absolute w-20 top-0 right-0 translate-x-[40%] -translate-y-[40%]">
+              <div className="best-sller absolute w-20 top-0 right-0 translate-x-[30%] -translate-y-[40%]">
                 <img src={bestSeller} alt="best seller" />
               </div>
             )}
-            <div className="text-2xl font-semibold">{seoPackage.type}</div>
-            <div className="text-xl mt-2 font-semibold">{seoPackage.price}</div>
+            <div className="text-2xl font-medium md:font-semibold">
+              {seoPackage.type}
+            </div>
+            <div className="text-xl mt-2 font-medium md:font-semibold">
+              {seoPackage.price}
+            </div>
             <Link to="/contact-us" className="block my-5">
               <Button
                 className="w-full font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"
@@ -432,7 +436,7 @@ export default function SeoPackages() {
                   ([key, value], index) => (
                     <div key={index} className="flex justify-between">
                       <div className="font-medium">{key}</div>
-                      <div className="font-semibold text-lg tracking-wider font-main">
+                      <div className="font-medium md:font-semibold text-lg tracking-wider font-main">
                         {value}
                       </div>
                     </div>
@@ -443,7 +447,9 @@ export default function SeoPackages() {
             <div className="mt-4">
               {Object.entries(seoPackage.points).map(([key, value], index) => (
                 <div key={index}>
-                  <div className="text-lg mt-6 font-semibold">{key}</div>
+                  <div className="text-lg mt-6 font-medium md:font-semibold">
+                    {key}
+                  </div>
                   <div className="mt-2">
                     {Object.entries(value).map(([key, value], index) => (
                       <div
@@ -452,7 +458,7 @@ export default function SeoPackages() {
                         <div className="font-medium">{key}</div>
                         <div>
                           {typeof value === 'number' ? (
-                            <p className="font-semibold text-lg tracking-wider font-main">
+                            <p className="font-medium md:font-semibold text-lg tracking-wider font-main">
                               {value}
                             </p>
                           ) : (

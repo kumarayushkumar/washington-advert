@@ -101,13 +101,17 @@ export default function PpcPackages() {
   ]
   return (
     <PackagesSectionWrapper title="PPC Packages">
-      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">
+      <div className="grid md:grid-cols-4 gap-6 mt-4 lg:mt-6 xl:mt-8">
         {ppcPackages.map((ppcPackage, index) => (
           <div
             key={index}
             className="flex-1 bg-white p-6 border border-secondary/60">
-            <div className="text-2xl font-semibold">{ppcPackage.type}</div>
-            <div className="text-xl mt-2 font-semibold">{ppcPackage.price}</div>
+            <div className="text-2xl font-medium md:font-semibold">
+              {ppcPackage.type}
+            </div>
+            <div className="text-xl mt-2 font-medium md:font-semibold">
+              {ppcPackage.price}
+            </div>
             <Link to="/contact-us" className="block my-5">
               <Button
                 className="w-full font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"

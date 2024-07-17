@@ -46,8 +46,7 @@ export default function Footer() {
         <div className="sm:col-span-2">
           <p className="font-main text-3xl lg:text-4xl">WASHINGTON ADVERT</p>
           <p className="font-highlight mt-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
-            nihil.
+            Get Started Today, Supercharge Your Digital Presence.
           </p>
         </div>
         <div className="mt-6  sm:mt-0 flex flex-col gap-1 font-sub text-lg font-medium">

@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="hero-wrapper ">
       <div className={`header-wrapper ${!isNavOpen ? 'z-20' : ''}`}>
-        <Header toggleZIndex={toggleZIndex}/>
+        <Header toggleZIndex={toggleZIndex} />
       </div>
       <div
         className={`hero text-whiteout mt-16 lg:pt-24 container ${!isNavOpen ? 'z-20' : ''}`}>

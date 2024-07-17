@@ -10,7 +10,7 @@ export function Packages() {
       <div className="text-center text-whiteout bg-whiteout">
         <PageHero heading="Our Packages" />
       </div>
-      <div className="py-6 md:py-10 flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16">
+      <div className="py-6 md:py-10 flex flex-col gap-8 sm:gap-8 md:gap-12 lg:gap-14 xl:gap-16">
         <SeoPackages />
         <SmoPackages />
         <PpcPackages />

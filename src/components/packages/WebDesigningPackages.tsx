@@ -174,20 +174,20 @@ export default function WebDesigningPackages() {
   ]
   return (
     <PackagesSectionWrapper title="Web Designing Packages">
-      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">
+      <div className="grid md:grid-cols-4 gap-6 mt-4 lg:mt-6 xl:mt-8">
         {webDesigningPackages.map((webDesigningPackage, index) => (
           <div
             key={index}
             className="flex-1 bg-white p-6 border border-secondary/60 relative">
             {index === 1 && (
-              <div className="best-sller absolute w-20 top-0 right-0 translate-x-[40%] -translate-y-[40%]">
+              <div className="best-sller absolute w-10 h-10 md:w-20 top-0 right-0 translate-x-[40%] -translate-y-[40%]">
                 <img src={bestSeller} alt="best seller" />
               </div>
             )}
-            <div className="text-2xl font-semibold">
+            <div className="text-2xl font-medium md:font-semibold">
               {webDesigningPackage.type}
             </div>
-            <div className="text-xl mt-2 font-semibold">
+            <div className="text-xl mt-2 font-medium md:font-semibold">
               {webDesigningPackage.price}
             </div>
             <Link to="/contact-us" className="block my-5">

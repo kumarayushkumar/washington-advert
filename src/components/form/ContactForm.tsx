@@ -154,7 +154,7 @@ export function ContactUsForm() {
         />
         <div className="flex justify-end">
           <Button
-            className="text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-semibold"
+            className="text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-medium md:font-semibold"
             size="lg"
             type="submit">
             Submit

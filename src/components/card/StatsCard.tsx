@@ -16,7 +16,7 @@ export default function StatsCard({
           {value}
         </p>
       </div>
-      <p className="text-gray-700 mt-5 font-semibold font-highlight text-sm md:text-base lg:text-lg">
+      <p className="text-gray-700 mt-5 font-medium md:font-semibold font-highlight text-sm md:text-base lg:text-lg">
         {title}
       </p>
     </div>

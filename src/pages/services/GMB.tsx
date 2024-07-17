@@ -60,7 +60,7 @@ export function GMB() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-3xl md:text-4xl font-semibold font-highlight">
+              <h1 className="text-3xl md:text-4xl font-medium md:font-semibold font-highlight">
                 What is Google My Business?
               </h1>
               <p className="mt-8 leading-8 text-lg font-medium">
@@ -74,7 +74,7 @@ export function GMB() {
             </div>
             <Link to="/contact-us">
               <Button
-                className="text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-semibold"
+                className="text-base font-highlight bg-white text-accent border-2 border-accent hover:bg-secondary hover:border-secondary hover:text-white font-medium md:font-semibold"
                 size="lg">
                 Get Started
               </Button>
@@ -86,7 +86,7 @@ export function GMB() {
         </div>
         <div className="mt-16 flex flex-col gap-5">
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-3xl">
+            <p className="font-medium md:font-semibold text-3xl">
               Google Business Profile Management Services
             </p>
             <p className="font-medium">
@@ -96,7 +96,9 @@ export function GMB() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">Dominate Your Local Area</p>
+            <p className="font-medium md:font-semibold text-2xl">
+              Dominate Your Local Area
+            </p>
             <p className="font-medium">
               Our Google Business Profile Management service is perfect for
               local businesses such as salons, real estate agencies, travel
@@ -105,7 +107,9 @@ export function GMB() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">Features & Benefits</p>
+            <p className="font-medium md:font-semibold text-2xl">
+              Features & Benefits
+            </p>
             <div className="font-medium flex flex-col gap-2">
               <p className="">
                 Google My Business Management: Maximize your exposure on Google
@@ -137,7 +141,7 @@ export function GMB() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">
+            <p className="font-medium md:font-semibold text-2xl">
               Why Choose Our Google Business Profile Management Services?
             </p>
             <p className="font-medium">
@@ -149,7 +153,9 @@ export function GMB() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">What to Expect?</p>
+            <p className="font-medium md:font-semibold text-2xl">
+              What to Expect?
+            </p>
             <p className="font-medium">
               Expect top-quality service, excellent communication, and
               guaranteed results from our skilled specialists. We won’t stop
@@ -158,7 +164,9 @@ export function GMB() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">Always Here to Help</p>
+            <p className="font-medium md:font-semibold text-2xl">
+              Always Here to Help
+            </p>
             <p className="font-medium">
               Whether you’re a small start-up or a well-established local
               business, our flexible packages cater to your needs. Get access to
@@ -167,7 +175,7 @@ export function GMB() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-2xl">
+            <p className="font-medium md:font-semibold text-2xl">
               Are You Ready to Soar Above the Competition?
             </p>
             <p className="font-medium">
@@ -194,7 +202,7 @@ export function GMB() {
         </div>
 
         <div className="mt-16">
-          <div className="text-center text-4xl font-semibold my-8">
+          <div className="text-center text-4xl font-medium md:font-semibold my-8">
             We have expertise in
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
@@ -203,7 +211,9 @@ export function GMB() {
                 key={index}
                 className="border-2 border-secondary/50 px-4 py-6 rounded-lg flex flex-col gap-2 items-center text-center">
                 <div className="text-4xl text-accent">{expertise.icon}</div>
-                <p className="font-semibold text-lg mt-2">{expertise.title}</p>
+                <p className="font-medium md:font-semibold text-lg mt-2">
+                  {expertise.title}
+                </p>
                 <p className="">{expertise.description}</p>
               </div>
             ))}

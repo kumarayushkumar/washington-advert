@@ -102,7 +102,7 @@ export function WebDesigning() {
                 <img src={webDesignService.image} alt="" className="rounded-sm" />
               </div> */}
               <div className="px-2 py-2">
-                <h3 className="text-xl font-semibold font-highlight">
+                <h3 className="text-xl font-medium md:font-semibold font-highlight">
                   {webDesignService.title}
                 </h3>
                 <p className="text-base mt-2">{webDesignService.description}</p>

@@ -149,7 +149,7 @@ export default function SmoPackages() {
 
   return (
     <PackagesSectionWrapper title="SMO Packages">
-      <div className="flex gap-6 mt-4 lg:mt-6 xl:mt-8">
+      <div className="grid md:grid-cols-4 gap-6 mt-4 lg:mt-6 xl:mt-8">
         {smoPackages.map((smoPackage, index) => (
           <div
             key={index}
@@ -159,8 +159,12 @@ export default function SmoPackages() {
                 <img src={bestSeller} alt="best seller" />
               </div>
             )}
-            <div className="text-2xl font-semibold">{smoPackage.type}</div>
-            <div className="text-xl mt-2 font-semibold">{smoPackage.price}</div>
+            <div className="text-2xl font-medium md:font-semibold">
+              {smoPackage.type}
+            </div>
+            <div className="text-xl mt-2 font-medium md:font-semibold">
+              {smoPackage.price}
+            </div>
             <Link to="/contact-us" className="block my-5">
               <Button
                 className="w-full font-highlight text-base border-2 border-accent bg-white text-accent hover:text-white hover:border-primary"
@@ -171,7 +175,9 @@ export default function SmoPackages() {
             <div className="mt-4">
               {Object.entries(smoPackage.points).map(([key, value], index) => (
                 <div key={index}>
-                  <div className="text-lg mt-6 font-semibold">{key}</div>
+                  <div className="text-lg mt-6 font-medium md:font-semibold">
+                    {key}
+                  </div>
                   <div className="mt-2">
                     {Object.entries(value).map(([key, value], index) => (
                       <div
@@ -180,7 +186,7 @@ export default function SmoPackages() {
                         <div className="font-medium">{key}</div>
                         <div>
                           {typeof value === 'number' ? (
-                            <p className="font-semibold text-lg tracking-wider font-main">
+                            <p className="font-medium md:font-semibold text-lg tracking-wider font-main">
                               {value}
                             </p>
                           ) : (
