@@ -2,15 +2,15 @@ import img from '/assets/images/home/google-ranking.webp'
 
 export default function Ranking() {
   return (
-    <section id="ranking" className="grid grid-cols-2 bg-whiteout">
-      <div className="">
+    <section id="ranking" className="grid lg:grid-cols-2 bg-whiteout">
+      <div className="hidden lg:visible">
         <img
           src={img}
           alt="Googel ranking"
           className="w-full h-full object-fit object-center mx-auto "
         />
       </div>
-      <div className="py-16 px-20 ranking-wrapper text-white">
+      <div className="py-12 md:py-16 px-10 sm:px-12 md:px-20 ranking-wrapper text-white">
         <p className="text-2xl font-main font-semibold">
           GROW TRAFFIC & INCREASE REVENUE
         </p>

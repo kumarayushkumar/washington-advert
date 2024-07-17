@@ -24,27 +24,31 @@ export default function WhyChooseUs() {
         <div className="flex flex-col md:flex-row md:gap-14">
           <div className="flex flex-col justify-between">
             <div className="">
-              <p className="text-4xl font-main">
+              <p className="text-3xl md:text-4xl font-main">
                 Why should choose our agency?
               </p>
-              <div className="text-lg flex flex-col gap-4 md:mt-8">
-                <p className="">
-                  <strong>Proven Results: </strong>
+              <div className="text-lg flex flex-col gap-4 mt-6 md:mt-8">
+                <div className="">
+                  <p className="font-semibold md:font-bold">Proven Results: </p>
                   Experience measurable success with our proven track record of
                   driving brands to the top of search engine rankings.
-                </p>
-                <p>
-                  <strong>Strategic Approach: </strong>
+                </div>
+                <div>
+                  <p className="font-semibold md:font-bold">
+                    Strategic Approach:
+                  </p>
                   We don't just follow trends; we set them. Our strategic
                   thinking ensures your brand stays ahead in the dynamic digital
                   landscape.
-                </p>
-                <p>
-                  <strong>Comprehensive Services: </strong>
+                </div>
+                <div>
+                  <p className="font-semibold md:font-bold">
+                    Comprehensive Services:
+                  </p>
                   From website design to SEO mastery, our services are tailored
                   to meet the unique needs of your business, creating a holistic
                   digital presence.
-                </p>
+                </div>
               </div>
             </div>
             <div>

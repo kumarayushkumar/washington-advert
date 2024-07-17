@@ -9,8 +9,8 @@ export default function Header() {
   )?.bgColor
   return (
     <header
-      className={`pb-4 ${bgColor} flex text-white justify-between px-4 pt-4 md:pt-8 md:px-16`}>
-      <h1 className={`font-main font-bold text-xl md:text-5xl`}>
+      className={`pb-4 ${bgColor} flex text-white justify-between px-8 pt-8 md:px-16`}>
+      <h1 className={`font-main font-medium md:font-bold text-3xl md:text-5xl`}>
         Washington Advert
       </h1>
       <Navbar />

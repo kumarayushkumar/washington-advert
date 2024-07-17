@@ -49,7 +49,7 @@ export default function Expertise() {
   return (
     <section id="services" className="md:px-10 text-whiteout py-10 md:py-14 ">
       <div className="relative z-10 container">
-        <div className="text-center text-5xl font-semibold text-whiteout">
+        <div className="text-center text-3xl sm:text-4xl md:text-5xl font-medium sm:font-semibold text-whiteout">
           Our Expertise
         </div>
         <div className="pb-8 md:pt-10 md:pb-10">

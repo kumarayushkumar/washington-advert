@@ -12,7 +12,7 @@ export default function Image({
       <img
         src={image}
         alt={title}
-        className=" max-h-72 md:min-w-[34rem] object-cover object-center mx-auto"
+        className="max-h-72 lg:min-w-[34rem] object-cover object-center mx-auto"
       />
     </div>
   )

@@ -41,19 +41,17 @@ export default function Footer() {
     }
   ]
   return (
-    <footer className="bg-[#100c08] text-white pt-[5rem] pb-4">
-      <div className="container grid grid-cols-6 gap-16 px-16 font-sub">
-        <div className="col-span-2">
-          <p className="font-main text-xl sm:text-2xl md:text-text-3xl lg:text-4xl">
-            WASHINGTON ADVERT
-          </p>
+    <footer className="bg-[#100c08] text-white pt-6 sm:pt-[5rem] pb-4">
+      <div className="container sm:grid sm:grid-cols-2 lg:grid-cols-6 sm:gap-16 px-16 font-sub">
+        <div className="sm:col-span-2">
+          <p className="font-main text-3xl lg:text-4xl">WASHINGTON ADVERT</p>
           <p className="font-highlight mt-4">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
             nihil.
           </p>
         </div>
-        <div className="flex flex-col gap-1 font-sub text-lg font-medium">
-          <p className="underline text-sm mb-1">Links</p>
+        <div className="mt-6  sm:mt-0 flex flex-col gap-1 font-sub text-lg font-medium">
+          <p className="underline text-base mb-1">Links</p>
           {navLinks?.map((nav, index) => {
             return (
               <div key={index}>
@@ -72,8 +70,8 @@ export default function Footer() {
             )
           })}
         </div>
-        <div className="flex flex-col gap-1 font-sub text-lg font-medium">
-          <p className="underline text-sm mb-1">Services</p>
+        <div className="mt-6 sm:mt-0 flex flex-col gap-1 font-sub text-lg font-medium">
+          <p className="underline text-base mb-1">Services</p>
           {services.map((nav, index) => {
             return (
               <Link
@@ -85,11 +83,12 @@ export default function Footer() {
             )
           })}
         </div>
-        <div className="col-span-2 text-xl font-medium flex flex-col">
-          <p className="underline text-sm mb-3">Contact Us</p>
+        <div className="mt-6 sm:mt-0 sm:col-span-2 text-xl font-medium flex flex-col">
+          <p className="underline text-base mb-3">Contact Us</p>
           <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Mail size={24} className="" />
             <a
+              className="text-base sm:text-lg"
               aria-label={`Send us an email on ${CONSTANTS.EMAIL}`}
               href={`mailto:${CONSTANTS.EMAIL}`}>
               {CONSTANTS.EMAIL}
@@ -98,6 +97,7 @@ export default function Footer() {
           <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
             <Phone size={24} className="" />
             <a
+              className="text-base sm:text-lg"
               aria-label={`Call us on ${CONSTANTS.PHONE}`}
               href={`tel:${CONSTANTS.PHONE}`}>
               {CONSTANTS.PHONE}
@@ -109,7 +109,7 @@ export default function Footer() {
               className="transform translate-y-[-50%]"
             />
             <a
-              className="text-lg"
+              className="text-base sm:text-lg"
               aria-label={`Our address is ${CONSTANTS.ADDRESS.TEXT}`}
               target="_blank"
               rel="noreferrer"
@@ -119,6 +119,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <div className="social-media bg-[#16161d] mb-6 mt-8 md:mb-12 md:mt-14 flex justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16 py-6 text-whiteout">
         {socialMedia.map((social, index) => (
           <a
@@ -132,10 +133,12 @@ export default function Footer() {
           </a>
         ))}
       </div>
+
       <div className="big-name uppercase text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
         Washington Advert
       </div>
-      <p className="text-sm font-medium font-sub text-center">
+
+      <p className="text-sm mt-2 font-medium font-sub text-center">
         © 2024 Washington Advert. All Rights Reserved.
       </p>
     </footer>

@@ -17,17 +17,17 @@ export default function ServiceCard({
 }) {
   return (
     <div className="mt-10 backdrop-blur-md backdrop-filter">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <Image className="md:hidden" image={image} title={title} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <Image className="lg:hidden" image={image} title={title} />
         {index % 2 === 0 ? (
           <Image
-            className="item-center hidden md:block rounded-tr-full"
+            className="item-center hidden lg:block rounded-tr-full"
             image={image}
             title={title}
           />
         ) : null}
         <div className=" flex flex-col items-start justify-center pl-8 md:pl-14 ">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-sub font-semibold">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-sub font-medium sm:font-semibold">
             {title}
           </p>
           <p className="text-md lg:text-lg xl:text-xl font-light mt-1 md:mt-2">
@@ -40,7 +40,7 @@ export default function ServiceCard({
           </Button>
         </div>
         {index % 2 !== 0 ? (
-          <Image className="hidden md:block" image={image} title={title} />
+          <Image className="hidden lg:block" image={image} title={title} />
         ) : null}
       </div>
     </div>

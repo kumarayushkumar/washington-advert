@@ -9,11 +9,11 @@ export default function Hero() {
       </div>
       <div className="hero text-whiteout mt-16 lg:pt-24 container">
         <div className="md:px-6 sm:px-8 lg:px-16 xl:px-20">
-          <div className="text-4xl xl:text-7xl font-bold ">
+          <div className="text-3xl sm:text-4xl xl:text-7xl font-medium sm:font-semibold md:font-bold ">
             <p className="">Digital Marketing</p>
-            <p className="mt-3">That Drives Your Business</p>
+            <p className="mt-2 sm:mt-3">That Drives Your Business</p>
           </div>
-          <p className="mt-8 md:mt-12 text-xl font-highlight">
+          <p className="mt-6 sm:mt-10 md:mt-12 sm:text-xl font-highlight">
             Get Started Today, Supercharge Your Digital Presence.
           </p>
           <div className="mt-6 md:mt-8 flex gap-6">

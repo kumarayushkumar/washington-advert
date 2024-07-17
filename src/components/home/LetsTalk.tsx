@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function LetsTalk() {
   return (
-    <section id="lets-talk" className="grid grid-cols-7 bg-whiteout">
+    <section id="lets-talk" className="lg:grid grid-cols-7 bg-whiteout hidden">
       <div className="col-span-2"></div>
 
       <div className="col-span-5 lets-talk-action-wrapper relative py-40 ">
