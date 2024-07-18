@@ -61,5 +61,23 @@ export const navLinks = [
     title: 'Contact Us',
     href: '/contact-us',
     bgColor: 'bg-accent'
+  },
+  {
+    title: 'Privacy Policy',
+    href: '/privacy-policy',
+    bgColor: 'bg-accent',
+    showInNavbar: false
+  },
+  {
+    title: 'Terms and Condition',
+    href: '/terms-and-condition',
+    bgColor: 'bg-accent',
+    showInNavbar: false
+  },
+  {
+    title: 'Refund Policy',
+    href: '/refund-policy',
+    bgColor: 'bg-accent',
+    showInNavbar: false
   }
 ]

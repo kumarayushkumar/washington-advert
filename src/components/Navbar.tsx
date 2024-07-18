@@ -33,6 +33,9 @@ export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
       </div>
       <ul className="lg:flex lg:justify-between gap-6 items-center hidden">
         {navLinks.map((nav, index) => {
+          if (nav.showInNavbar === false) {
+            return
+          }
           return (
             <li key={index} className="mt-2 lg:mt-0">
               <Link to={nav.href}>
@@ -74,36 +77,44 @@ export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
           <XIcon className="h-7 w-7 sm:h-8 sm:w-8" />
         </button>
         <ul>
-          {navLinks.map((nav, index) => (
-            <li key={index} className="mt-4">
-              <Link to={nav.href} onClick={toggleMenu}>
-                {Object.prototype.hasOwnProperty.call(
-                  nav,
-                  nav.title.toLowerCase()
-                ) ? (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger>{nav.title}</DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      {(
-                        nav[nav.title.toLowerCase() as keyof typeof nav] as {
-                          title: string
-                          href: string
-                        }[]
-                      ).map((item, index) => {
-                        return (
-                          <Link key={index} to={item.href} onClick={toggleMenu}>
-                            <DropdownMenuItem>{item.title}</DropdownMenuItem>
-                          </Link>
-                        )
-                      })}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                ) : (
-                  <div>{nav.title}</div>
-                )}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((nav, index) => {
+            if (nav.showInNavbar === false) {
+              return
+            }
+            return (
+              <li key={index} className="mt-4">
+                <Link to={nav.href} onClick={toggleMenu}>
+                  {Object.prototype.hasOwnProperty.call(
+                    nav,
+                    nav.title.toLowerCase()
+                  ) ? (
+                    <DropdownMenu>
+                      <DropdownMenuTrigger>{nav.title}</DropdownMenuTrigger>
+                      <DropdownMenuContent>
+                        {(
+                          nav[nav.title.toLowerCase() as keyof typeof nav] as {
+                            title: string
+                            href: string
+                          }[]
+                        ).map((item, index) => {
+                          return (
+                            <Link
+                              key={index}
+                              to={item.href}
+                              onClick={toggleMenu}>
+                              <DropdownMenuItem>{item.title}</DropdownMenuItem>
+                            </Link>
+                          )
+                        })}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  ) : (
+                    <div>{nav.title}</div>
+                  )}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>
