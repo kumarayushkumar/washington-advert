@@ -1,12 +1,14 @@
 import { useLocation } from 'react-router-dom'
+
 import Navbar from './Navbar'
 import { navLinks } from '@/lib/navbar-link'
 
 export default function Header({ toggleZIndex }: { toggleZIndex: () => void }) {
   const location = useLocation()
-  const bgColor = navLinks.find(
-    link => link.href.split('/')[1] === location.pathname.split('/')[1]
-  )?.bgColor
+  const bgColor =
+    navLinks.find(
+      link => link.href.split('/')[1] === location.pathname.split('/')[1]
+    )?.bgColor || 'bg-accent'
   return (
     <header
       className={`pb-4 ${bgColor} flex text-white justify-between px-8 pt-8 md:px-16`}>

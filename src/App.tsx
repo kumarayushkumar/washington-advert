@@ -20,6 +20,9 @@ import { Industries } from './pages/Industries'
 import { ContactUs } from './pages/ContactUs'
 import { AboutUs } from './pages/AboutUs'
 import { useEffect } from 'react'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsAndCondition from './pages/TermsAndCondition'
+import RefundPolicy from './pages/RefundPolicy'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -45,6 +48,10 @@ const router = createBrowserRouter(
 
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="about-us" element={<AboutUs />} />
+
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="terms-and-condition" element={<TermsAndCondition />} />
+        <Route path="refund-policy" element={<RefundPolicy />} />
       </Route>
 
       <Route path="*" element={<Error />} />

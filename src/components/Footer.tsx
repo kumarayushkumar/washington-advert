@@ -137,6 +137,32 @@ export default function Footer() {
         Washington Advert
       </div>
 
+      <div className="px-10 flex font-medium font-sub text-sm md:text-base justify-center my-2 md:my-4 gap-16">
+        <a
+          href="/privacy-policy"
+          target="_blank"
+          aria-label={`Visit our privacy policy page`}
+          rel="noreferrer"
+          className="hover:scale-[1.1] transition-all duration-300">
+          Privacy Policy
+        </a>
+        <a
+          href="/terms-and-condition"
+          target="_blank"
+          aria-label={`Visit our terms and condition page`}
+          rel="noreferrer"
+          className="hover:scale-[1.1] transition-all duration-300">
+          Terms & Conditions
+        </a>
+        <a
+          href="/refund-policy"
+          target="_blank"
+          aria-label={`Visite our refund policy page`}
+          rel="noreferrer"
+          className="hover:scale-[1.1] transition-all duration-300">
+          Refund Policy
+        </a>
+      </div>
       <p className="text-sm mt-2 font-medium font-sub text-center">
         © 2024 Washington Advert. All Rights Reserved.
       </p>

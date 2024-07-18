@@ -67,7 +67,10 @@ export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
       </ul>
       <div
         className={`full-screen-menu text-black text-xl ${isOpen ? 'open' : ''}`}>
-        <button onClick={toggleMenu} aria-label="close navbar" className="close-btn">
+        <button
+          onClick={toggleMenu}
+          aria-label="close navbar"
+          className="close-btn">
           <XIcon className="h-7 w-7 sm:h-8 sm:w-8" />
         </button>
         <ul>
