@@ -3,7 +3,7 @@ export default function HomeOverview() {
     <section
       id="home-overview"
       className="px-10 md:px-16 py-10 md:py-20 grid md:grid-cols-3 bg-whiteout container">
-      <div className="hidden md:visible text-accent col-span-1 text-center uppercase text-lg font-medium mt-8">
+      <div className="hidden md:block text-accent col-span-1 text-center uppercase text-lg font-medium mt-8">
         Digital Agency
       </div>
       <div className="col-span-2">
