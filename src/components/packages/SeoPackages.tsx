@@ -9,6 +9,89 @@ export default function SeoPackages() {
   const seoPackages = [
     {
       type: 'Basic',
+      price: '$400/Month',
+      description: {
+        'No. of Keywords': 20,
+        'Landing Pages': 3,
+        'Backlinks(per month)': 100
+      },
+      points: {
+        'First Hand SEO Analysis': {
+          'Pre-Optmization Website analysis': true,
+          "Competitor's Analysis": true,
+          'Keyword Research and Analysis': true,
+          'Baseline Ranking Check': true,
+          'Duplicate Content Check': true,
+          'Google Penalty Check': true,
+          'Back Link Analysis': false
+        },
+        'On Page Optimization Activities': {
+          'Website Cononical Check': true,
+          'Title tag Optimization': true,
+          'Meta Tags Optimization': true,
+          'Heading Tags Optimization': false,
+          'Image Alt Tags Optimization': true,
+          'Content Optimization': true,
+          'SEO Friendly URL Setup': true,
+          'Site navigation Analysis': false,
+          '404 Page Implementation': true,
+          'Broken Link Check': false,
+          'Website speed check': true,
+          'Google Indexed page check': true,
+          'Robots.txt Creation': true,
+          'Google XML sitemap': true,
+          'PHP Sitemap Setup': false,
+          'Google Webmaster Tools Setup': true,
+          'Google Analystics setup': true,
+          'Structured Data setup': false,
+          'On site blog Section Creation': true,
+          'On site Blog posting(Draft Copy)- Applicable from 3rd Month': 1
+        },
+        'Off-page Optimization Activities': {
+          'Search Engine Submission': 10,
+          'Article Writing': 1,
+          'Article Posting': 1,
+          'Article Bookmarking': 10,
+          'Classified Submissions': 10,
+          'Business Listing': 5,
+          'Blog Writing': 1,
+          'Blog Posting': 1,
+          'Blog Bookmarking': 10,
+          'On-page Blog': 1,
+          'On-Page Blog Bookmarking': 5,
+          'Image Sharing': 5,
+          'PPT Submissions': 1,
+          'PPT Bookmarking': 10,
+          'Social Bookmarking': 30,
+          'PDF Sharing': 1,
+          'PDF Bookmarking': 5,
+          'Profile Creation': 5,
+          'Quora Answering': 1,
+          'Info Graphic Creation': 1,
+          'Info Graphic Bookmarking': 5,
+          'Video Marketing (if Client provides)': true,
+          'Press Release (If Client Provides News)': true
+        },
+        'SMO Activities': {
+          Facebook: false,
+          Instagram: false,
+          Twitter: false,
+          Pinterest: false
+        },
+        Reports: {
+          'Monthly Website Analytics Report': true,
+          'Monthly Keywords Ranking Report': true,
+          'Monthly Off Page Submission Report': true
+        },
+        'Customer Support': {
+          Email: true,
+          Phone: true,
+          Chat: true
+        }
+      }
+    },
+    {
+      type: 'Standard',
       price: '$550/Month',
       description: {
         'No. of Keywords': 30,
@@ -107,7 +190,7 @@ export default function SeoPackages() {
       }
     },
     {
-      type: 'Standard',
+      type: 'Professional',
       price: '$800/Month',
       description: {
         'No. of Keywords': 40,
@@ -206,7 +289,7 @@ export default function SeoPackages() {
       }
     },
     {
-      type: 'Professional',
+      type: 'Enterprise',
       price: '$1100/Month',
       description: {
         'No. of Keywords': 50,
@@ -305,7 +388,7 @@ export default function SeoPackages() {
       }
     },
     {
-      type: 'Enterprise',
+      type: 'Diamond',
       price: '$1800/Month',
       description: {
         'No. of Keywords': 100,
@@ -407,7 +490,7 @@ export default function SeoPackages() {
 
   return (
     <PackagesSectionWrapper title="SEO Packages">
-      <div className="grid md:grid-cols-4 gap-6 mt-4 lg:mt-6 xl:mt-8 relative">
+      <div className="grid md:grid-cols-3 gap-6 mt-4 lg:mt-6 xl:mt-8 relative">
         {seoPackages.map((seoPackage, index) => (
           <div
             key={index}
