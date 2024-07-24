@@ -156,26 +156,10 @@ export default function SeoPackages() {
           'Press Release (If Client Provides News)': true
         },
         'SMO Activities': {
-          Facebook: {
-            'Facebook Profile Creation': false,
-            'Facebook Fan Page Creation': false,
-            'Facebook Posting & Sharing': false
-          },
-          Instagram: {
-            'Instagram Business Profile Creation': false,
-            'Creation of Interactive Branded Hashtag': false,
-            'Instagram Posting': false
-          },
-          Twitter: {
-            'Twitter Profile Creation': false,
-            'Twitter Post': false
-          },
-          Pinterest: {
-            'Account Creation/Management': false,
-            'Pinterest Followers': false,
-            'Updating of pin boards': false,
-            'Pins (If Client Provides Images)': false
-          }
+          Facebook: false,
+          Instagram: false,
+          Twitter: false,
+          Pinterest: false
         },
         Reports: {
           'Monthly Website Analytics Report': true,
