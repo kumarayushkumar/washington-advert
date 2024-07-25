@@ -1,3 +1,5 @@
+import React from 'react'
+
 import services1 from '/assets/images/services/home/services-1.webp'
 import services2 from '/assets/images/services/home/services-2.webp'
 import services3 from '/assets/images/services/home/services-3.webp'
@@ -9,51 +11,59 @@ import ServiceCard from '../card/ServiceCard'
 const services = [
   {
     title: 'Web Designing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Craft stunning, user-friendly websites that captivate and convert.',
     image: services1,
     buttonText: 'Know More',
     link: '/services/web-designing'
   },
   {
     title: 'Pay Per Click',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Maximize your ROI with expertly managed pay-per-click campaigns that deliver results.',
     image: services2,
     buttonText: 'Know More',
     link: '/services/ppc'
   },
   {
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Enhance your online presence with comprehensive SEO strategies that improve search rankings.',
     image: services4,
     buttonText: 'Know More',
     link: '/services/seo'
   },
   {
     title: 'Social Media Marketing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Elevate your brand with tailored social media strategies that drive engagement and growth.',
     image: services3,
     buttonText: 'Know More',
     link: '/services/social-media-marketing'
   },
   {
     title: 'Local SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Boost your local visibility with targeted SEO techniques that drive local traffic.',
     image: services5,
     buttonText: 'Know More',
     link: '/services/local-seo'
   },
   {
     title: 'Google My Business',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:
+      'Optimize your Google My Business profile to attract and convert local customers effectively.',
     image: services6,
     buttonText: 'Know More',
     link: '/services/gmb'
   }
 ]
 
-import React from 'react';
-
-export default function Expertise({ expertiseRef }: { expertiseRef: React.RefObject<HTMLElement> }) {
+export default function Expertise({
+  expertiseRef
+}: {
+  expertiseRef: React.RefObject<HTMLElement>
+}) {
   return (
     <section
       id="services"
