@@ -1,6 +1,8 @@
+import { Outlet } from 'react-router-dom'
+
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { Outlet } from 'react-router-dom'
+import { Toaster } from '@/components/ui/toaster'
 
 export default function Layout() {
   return (
@@ -8,6 +10,7 @@ export default function Layout() {
       <Header toggleZIndex={() => {}} />
       <Outlet />
       <Footer />
+      <Toaster />
     </div>
   )
 }

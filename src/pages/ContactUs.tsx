@@ -1,6 +1,10 @@
+import ErrorMessage from '@/components/ErrorMessage'
 import { ContactUsForm } from '@/components/form/ContactForm'
+import { useState } from 'react'
 
 export function ContactUs() {
+  const [message, setMessage] = useState({ success: false, message: '' })
+
   const list = [
     {
       title: 'Expert',
@@ -60,8 +64,9 @@ export function ContactUs() {
             <p className="mt-2 lg:mt-3 text-2xl md:text-3xl font-medium md:font-semibold">
               Start a conversation with us
             </p>
-            <div className="bg-white flex items-center ">
-              <ContactUsForm />
+            <div className="bg-white flex items-center flex-col ">
+              <ContactUsForm setMessage={setMessage} />
+              {message.message && <ErrorMessage {...message} />}
             </div>
           </div>
         </div>

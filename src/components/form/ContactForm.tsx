@@ -16,8 +16,8 @@ import {
   FormMessage
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
-import { toast } from '@/components/ui/use-toast'
 import { CONSTANTS } from '@/utils/constants'
+import sendEmail from '@/utils/sendEmail'
 
 const FormSchema = z.object({
   name: z
@@ -48,27 +48,47 @@ const FormSchema = z.object({
     })
 })
 
-export function ContactUsForm() {
+type FormProps = {
+  setMessage: ({
+    success,
+    message
+  }: {
+    success: boolean
+    message: string
+  }) => void
+}
+
+export function ContactUsForm({ setMessage }: FormProps) {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      phone: ''
     }
   })
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
-      title: 'You submitted the following values:',
-      description: (
-        <pre className="mt-2 rounded-md bg-slate-950 p-4">
-          <code className="text-white text-xs">
-            {JSON.stringify(data, null, 2)}
-          </code>
-        </pre>
-      )
-    })
+  const onSubmit = async (data: z.infer<typeof FormSchema>) => {
+    try {
+      const response = await sendEmail(data)
+      if (!response.success) {
+        setMessage({
+          success: true,
+          message: 'Something went wrong. Please try again later.'
+        })
+      }
+      form.reset()
+      setMessage({
+        success: false,
+        message: 'We have received your message and will get back to you soon.'
+      })
+    } catch (error) {
+      setMessage({
+        success: true,
+        message: 'Something went wrong. Please try again later.'
+      })
+    }
   }
 
   return (
