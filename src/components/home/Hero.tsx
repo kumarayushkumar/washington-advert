@@ -1,10 +1,20 @@
 import { useState } from 'react'
+
 import Header from '../Header'
 import { Button } from '../ui/button'
 
-export default function Hero() {
+export default function Hero({
+  expertiseRef
+}: {
+  expertiseRef: React.RefObject<HTMLElement>
+}) {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
+  const handleGetStarted = () => {
+    if (expertiseRef.current) {
+      expertiseRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   const toggleZIndex = () => {
     setIsNavOpen(!isNavOpen)
   }
@@ -24,8 +34,14 @@ export default function Hero() {
             Get Started Today, Supercharge Your Digital Presence.
           </p>
           <div className="mt-6 md:mt-8 flex gap-6">
-            <Button variant={'outline'}>Get Started</Button>
-            <Button variant={'primary'}>Learn More</Button>
+            <Button
+              variant={'outline'}
+              onClick={() => {
+                handleGetStarted()
+              }}>
+              Get Started
+            </Button>
+            {/* <Button variant={'primary'}>Learn More</Button> */}
           </div>
         </div>
       </div>

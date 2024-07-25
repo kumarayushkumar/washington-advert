@@ -51,9 +51,14 @@ const services = [
   }
 ]
 
-export default function Expertise() {
+import React from 'react';
+
+export default function Expertise({ expertiseRef }: { expertiseRef: React.RefObject<HTMLElement> }) {
   return (
-    <section id="services" className="md:px-10 text-whiteout py-10 md:py-14 ">
+    <section
+      id="services"
+      ref={expertiseRef}
+      className="md:px-10 text-whiteout py-10 md:py-14 ">
       <div className="relative z-10 container">
         <div className="text-center text-3xl sm:text-4xl md:text-5xl font-medium sm:font-semibold text-whiteout">
           Our Expertise
