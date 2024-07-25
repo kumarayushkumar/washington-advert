@@ -1,10 +1,10 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaWhatsapp
-} from 'react-icons/fa'
+// import {
+//   FaFacebook,
+//   FaInstagram,
+//   FaLinkedin,
+//   FaTwitter,
+//   FaWhatsapp
+// } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { Mail, Phone } from 'lucide-react'
 
@@ -13,33 +13,33 @@ import { CONSTANTS } from '@/utils/constants'
 import { FaRegAddressCard } from 'react-icons/fa6'
 
 export default function Footer() {
-  const socialMedia = [
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/wearegrowigh/',
-      icon: <FaInstagram size={32} />
-    },
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/wearegrowigh/',
-      icon: <FaFacebook size={32} />
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/company/growigh',
-      icon: <FaLinkedin size={32} />
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/WeareGrowigh',
-      icon: <FaTwitter size={32} />
-    },
-    {
-      name: 'WhatsApp',
-      url: 'https://api.whatsapp.com/send/?phone=916263424118&text&app_absent=0',
-      icon: <FaWhatsapp size={32} />
-    }
-  ]
+  // const socialMedia = [
+  //   {
+  //     name: 'Instagram',
+  //     url: 'https://www.instagram.com/wearegrowigh/',
+  //     icon: <FaInstagram size={32} />
+  //   },
+  //   {
+  //     name: 'Facebook',
+  //     url: 'https://www.facebook.com/wearegrowigh/',
+  //     icon: <FaFacebook size={32} />
+  //   },
+  //   {
+  //     name: 'LinkedIn',
+  //     url: 'https://www.linkedin.com/company/growigh',
+  //     icon: <FaLinkedin size={32} />
+  //   },
+  //   {
+  //     name: 'Twitter',
+  //     url: 'https://twitter.com/WeareGrowigh',
+  //     icon: <FaTwitter size={32} />
+  //   },
+  //   {
+  //     name: 'WhatsApp',
+  //     url: 'https://api.whatsapp.com/send/?phone=916263424118&text&app_absent=0',
+  //     icon: <FaWhatsapp size={32} />
+  //   }
+  // ]
   return (
     <footer className="bg-[#100c08] text-white pt-6 sm:pt-[5rem] pb-4">
       <div className="container sm:grid sm:grid-cols-2 lg:grid-cols-6 sm:gap-16 px-16 font-sub">
@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="social-media bg-[#16161d] mb-6 mt-8 md:mb-12 md:mt-14 flex justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16 py-6 text-whiteout">
+      {/* <div className="social-media bg-[#16161d] mb-6 mt-8 md:mb-12 md:mt-14 flex justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16 py-6 text-whiteout">
         {socialMedia.map((social, index) => (
           <a
             key={index}
@@ -131,9 +131,9 @@ export default function Footer() {
             {social.icon}
           </a>
         ))}
-      </div>
+      </div> */}
 
-      <div className="big-name uppercase text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
+      <div className="mt-6 big-name uppercase text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
         Washington Advert
       </div>
 
