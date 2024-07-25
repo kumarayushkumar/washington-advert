@@ -11,37 +11,43 @@ const services = [
     title: 'Web Designing',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services1,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/web-designing'
   },
   {
     title: 'Pay Per Click',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services2,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/ppc'
   },
   {
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services4,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/seo'
   },
   {
     title: 'Social Media Marketing',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services3,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/social-media-marketing'
   },
   {
     title: 'Local SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services5,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/local-seo'
   },
   {
     title: 'Google My Business',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: services6,
-    buttonText: 'Know More'
+    buttonText: 'Know More',
+    link: '/services/gmb'
   }
 ]
 
@@ -62,6 +68,7 @@ export default function Expertise() {
               description={service.description}
               image={service.image}
               buttonText={service.buttonText}
+              link={service.link}
             />
           ))}
         </div>

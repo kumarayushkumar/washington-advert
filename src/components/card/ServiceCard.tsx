@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { Button } from '../ui/button'
 import Image from './Image'
 
@@ -6,7 +7,8 @@ export default function ServiceCard({
   title,
   description,
   image,
-  buttonText
+  buttonText,
+  link
 }: {
   className: string
   index: number
@@ -14,7 +16,12 @@ export default function ServiceCard({
   description: string
   image: string
   buttonText: string
+  link: string
 }) {
+  const navigate = useNavigate()
+  const handleClick = (link: string) => {
+    navigate(link)
+  }
   return (
     <div className="mt-10 backdrop-blur-md backdrop-filter">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -35,7 +42,10 @@ export default function ServiceCard({
           </p>
           <Button
             variant={'primary'}
-            className="mt-6 bg-rose-600 border-primary">
+            className="mt-6 bg-rose-600 border-primary"
+            onClick={() => {
+              handleClick(link)
+            }}>
             {buttonText}
           </Button>
         </div>

@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router-dom'
+import { IoCheckmarkCircle } from 'react-icons/io5'
+import { MdHighQuality, MdOutlineEmojiPeople } from 'react-icons/md'
+
 import whyChooseUs from '/assets/images/home/why-choose-us.webp'
 import { Button } from '../ui/button'
-import { MdHighQuality, MdOutlineEmojiPeople } from 'react-icons/md'
-import { IoCheckmarkCircle } from 'react-icons/io5'
 
 export default function WhyChooseUs() {
+  const navigate = useNavigate()
   const whyChooseUsPoints = [
     {
       icon: <MdOutlineEmojiPeople />,
@@ -18,6 +21,9 @@ export default function WhyChooseUs() {
       title: 'Best marketing solutions'
     }
   ]
+  const handleScheduleCall = () => {
+    navigate('/contact-us')
+  }
   return (
     <section id="why-choose-us" className="py-8 md:pt-16 md:pb-12 bg-whiteout">
       <div className="px-6 md:px-16 container">
@@ -52,7 +58,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <div>
-              <Button variant="primary" className="mt-6">
+              <Button
+                variant="primary"
+                className="mt-6"
+                onClick={handleScheduleCall}>
                 Schedule a Call
               </Button>
             </div>
