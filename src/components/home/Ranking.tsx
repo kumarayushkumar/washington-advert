@@ -3,7 +3,7 @@ import img from '/assets/images/home/google-ranking.webp'
 export default function Ranking() {
   return (
     <section id="ranking" className="grid lg:grid-cols-2 bg-whiteout">
-      <div className="hidden lg:visible">
+      <div className="hidden lg:block">
         <img
           src={img}
           alt="Googel ranking"
