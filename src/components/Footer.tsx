@@ -42,7 +42,7 @@ export default function Footer() {
   // ]
   return (
     <footer className="bg-[#100c08] text-white pt-6 sm:pt-[5rem] pb-4">
-      <div className="container sm:grid sm:grid-cols-2 lg:grid-cols-6 sm:gap-16 px-16 font-sub">
+      <div className="container sm:grid sm:grid-cols-2 lg:grid-cols-6 sm:gap-16 px-12 md:px-16 font-sub">
         <div className="sm:col-span-2">
           <p className="font-main text-3xl lg:text-4xl">WASHINGTON ADVERT</p>
           <p className="font-highlight mt-4">
@@ -110,10 +110,10 @@ export default function Footer() {
             <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
               <FaRegAddressCard
                 size={24}
-                className="transform translate-y-[-50%]"
+                className=""
               />
               <a
-                className="text-base sm:text-lg"
+                className="text-base sm:text-lg leading-5"
                 aria-label={`Our address is ${CONSTANTS.ADDRESS.TEXT}`}
                 target="_blank"
                 rel="noreferrer"
@@ -122,6 +122,15 @@ export default function Footer() {
               </a>
             </div>
           )}
+          <div className="mt-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49648.9159627401!2d-77.1392585550314!3d38.94552052406329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c9727e5e5119%3A0x7e7d95a3d3611731!2sWashington%20Advert!5e0!3m2!1sen!2sin!4v1723027712217!5m2!1sen!2sin"
+              width=""
+              height=""
+              className="border-0 rounded-sm w-full h-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
 
@@ -139,11 +148,11 @@ export default function Footer() {
         ))}
       </div> */}
 
-      <div className="mt-6 big-name uppercase text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
+      <div className="mt-6 big-name uppercase text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
         Washington Advert
       </div>
 
-      <div className="px-10 flex font-medium font-sub text-sm md:text-base justify-center my-2 md:my-4 gap-16">
+      <div className="grid grid-cols-2 md:grid-cols-3 justify-center font-medium font-sub text-xs md:text-base text-center my-2 md:my-4">
         <a
           href="/privacy-policy"
           target="_blank"
@@ -165,7 +174,7 @@ export default function Footer() {
           target="_blank"
           aria-label={`Visite our refund policy page`}
           rel="noreferrer"
-          className="hover:scale-[1.1] transition-all duration-300">
+          className="hover:scale-[1.1] transition-all duration-300 text-center mt-1 md:mt-0 col-span-2 md:col-span-1">
           Refund Policy
         </a>
       </div>
