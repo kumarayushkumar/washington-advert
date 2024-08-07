@@ -1,6 +1,6 @@
 import { lazy, useRef } from 'react'
 
-const Hero = lazy(() => import('@/components/home/Hero'))
+import Hero from '@/components/home/Hero'
 const HomeOverview = lazy(() => import('@/components/home/HomeOverview'))
 const Stats = lazy(() => import('@/components/home/Stats'))
 const WhyChooseUs = lazy(() => import('@/components/home/WhyChooseUs'))
