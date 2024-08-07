@@ -1,13 +1,13 @@
 import { lazy, useRef } from 'react'
 
 import Hero from '@/components/home/Hero'
+import Footer from '@/components/Footer'
 const HomeOverview = lazy(() => import('@/components/home/HomeOverview'))
 const Stats = lazy(() => import('@/components/home/Stats'))
 const WhyChooseUs = lazy(() => import('@/components/home/WhyChooseUs'))
 const Expertise = lazy(() => import('@/components/home/Expertise'))
 const SeoAudit = lazy(() => import('@/components/home/SeoAudit'))
 const LetsTalk = lazy(() => import('@/components/home/LetsTalk'))
-const Footer = lazy(() => import('@/components/Footer'))
 const Ranking = lazy(() => import('@/components/home/Ranking'))
 
 export default function Home() {
