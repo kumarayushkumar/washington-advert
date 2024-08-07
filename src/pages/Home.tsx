@@ -1,14 +1,14 @@
-import { useRef } from 'react'
+import { lazy, useRef } from 'react'
 
-import Footer from '@/components/Footer'
-import Hero from '@/components/home/Hero'
-import HomeOverview from '@/components/home/HomeOverview'
-import LetsTalk from '@/components/home/LetsTalk'
-import Expertise from '@/components/home/Expertise'
-import Stats from '@/components/home/Stats'
-import SeoAudit from '@/components/home/SeoAudit'
-import WhyChooseUs from '@/components/home/WhyChooseUs'
-import Ranking from '@/components/home/Ranking'
+const Hero = lazy(() => import('@/components/home/Hero'))
+const HomeOverview = lazy(() => import('@/components/home/HomeOverview'))
+const Stats = lazy(() => import('@/components/home/Stats'))
+const WhyChooseUs = lazy(() => import('@/components/home/WhyChooseUs'))
+const Expertise = lazy(() => import('@/components/home/Expertise'))
+const SeoAudit = lazy(() => import('@/components/home/SeoAudit'))
+const LetsTalk = lazy(() => import('@/components/home/LetsTalk'))
+const Footer = lazy(() => import('@/components/Footer'))
+const Ranking = lazy(() => import('@/components/home/Ranking'))
 
 export default function Home() {
   const expertiseRef = useRef(null)
