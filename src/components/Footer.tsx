@@ -84,38 +84,44 @@ export default function Footer() {
         </div>
         <div className="mt-6 sm:mt-0 sm:col-span-2 text-xl font-medium flex flex-col">
           <p className="underline text-base mb-3">Contact Us</p>
-          <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
-            <Mail size={24} className="" />
-            <a
-              className="text-base sm:text-lg"
-              aria-label={`Send us an email on ${CONSTANTS.EMAIL}`}
-              href={`mailto:${CONSTANTS.EMAIL}`}>
-              {CONSTANTS.EMAIL}
-            </a>
-          </div>
-          <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
-            <Phone size={24} className="" />
-            <a
-              className="text-base sm:text-lg"
-              aria-label={`Call us on ${CONSTANTS.PHONE}`}
-              href={`tel:${CONSTANTS.PHONE}`}>
-              {CONSTANTS.PHONE}
-            </a>
-          </div>
-          <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
-            <FaRegAddressCard
-              size={24}
-              className="transform translate-y-[-50%]"
-            />
-            <a
-              className="text-base sm:text-lg"
-              aria-label={`Our address is ${CONSTANTS.ADDRESS.TEXT}`}
-              target="_blank"
-              rel="noreferrer"
-              href={CONSTANTS.ADDRESS.URL}>
-              {CONSTANTS.ADDRESS.TEXT}
-            </a>
-          </div>
+          {CONSTANTS.EMAIL && (
+            <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
+              <Mail size={24} className="" />
+              <a
+                className="text-base sm:text-lg"
+                aria-label={`Send us an email on ${CONSTANTS.EMAIL}`}
+                href={`mailto:${CONSTANTS.EMAIL}`}>
+                {CONSTANTS.EMAIL}
+              </a>
+            </div>
+          )}
+          {CONSTANTS.PHONE && (
+            <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
+              <Phone size={24} className="" />
+              <a
+                className="text-base sm:text-lg"
+                aria-label={`Call us on ${CONSTANTS.PHONE}`}
+                href={`tel:${CONSTANTS.PHONE}`}>
+                {CONSTANTS.PHONE}
+              </a>
+            </div>
+          )}
+          {CONSTANTS.ADDRESS && (
+            <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
+              <FaRegAddressCard
+                size={24}
+                className="transform translate-y-[-50%]"
+              />
+              <a
+                className="text-base sm:text-lg"
+                aria-label={`Our address is ${CONSTANTS.ADDRESS.TEXT}`}
+                target="_blank"
+                rel="noreferrer"
+                href={CONSTANTS.ADDRESS.URL}>
+                {CONSTANTS.ADDRESS.TEXT}
+              </a>
+            </div>
+          )}
         </div>
       </div>
 

@@ -479,7 +479,7 @@ export default function SeoPackages() {
           <div
             key={index}
             className={`flex-1 bg-white p-6 border border-secondary/60 relative`}>
-            {index === 1 && (
+            {index === 2 && (
               <div className="best-sller absolute w-20 top-0 right-0 translate-x-[30%] -translate-y-[40%]">
                 <img src={bestSeller} alt="best seller" />
               </div>
