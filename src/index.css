@@ -87,16 +87,19 @@
 
   @font-face {
     font-family: 'Libre Baskerville';
+    font-display: swap;
     src: url('/assets/fonts/LibreBaskerville-Regular.ttf');
   }
 
   @font-face {
     font-family: 'Bebas Neue';
+    font-display: swap;
     src: url('/assets/fonts/BebasNeue-Regular.ttf');
   }
 
   @font-face {
     font-family: 'Red Rose';
+    font-display: swap;
     src: url('/assets/fonts/RedRose-VariableFont_wght.ttf');
   }
 
@@ -108,6 +111,7 @@
   body {
     @apply bg-whiteout text-foreground no-scrollbar;
     font-family: 'Open sans', sans-serif;
+    font-display: swap;
     scrollbar-width: 0;
   }
   ::-webkit-scrollbar {

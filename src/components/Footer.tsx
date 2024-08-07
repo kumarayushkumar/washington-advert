@@ -108,10 +108,7 @@ export default function Footer() {
           )}
           {CONSTANTS.ADDRESS && (
             <div className="mt-2 flex gap-3 items-center w-full hover:scale-105 transition duration-300">
-              <FaRegAddressCard
-                size={24}
-                className=""
-              />
+              <FaRegAddressCard size={24} className="" />
               <a
                 className="text-base sm:text-lg leading-5"
                 aria-label={`Our address is ${CONSTANTS.ADDRESS.TEXT}`}
@@ -124,6 +121,7 @@ export default function Footer() {
           )}
           <div className="mt-4">
             <iframe
+              title="Washington Advert Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49648.9159627401!2d-77.1392585550314!3d38.94552052406329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c9727e5e5119%3A0x7e7d95a3d3611731!2sWashington%20Advert!5e0!3m2!1sen!2sin!4v1723027712217!5m2!1sen!2sin"
               width=""
               height=""
