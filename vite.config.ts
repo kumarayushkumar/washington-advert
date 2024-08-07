@@ -7,12 +7,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
     rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react'],
-          'react-dom': ['react-dom']
-        }
-      }
+      output: {}
     }
   },
   resolve: {
