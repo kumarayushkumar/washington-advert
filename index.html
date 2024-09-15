@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-24WZPVBNYG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-24WZPVBNYG')
+    </script>
+
     <title>Washington Advert</title>
     <meta charset="UTF-8" />
     <meta
@@ -38,9 +52,10 @@
     <!-- Apple Meta Tags -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="" /> -->
     <meta name="apple-mobile-web-app-title" content="Washington Advert" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
