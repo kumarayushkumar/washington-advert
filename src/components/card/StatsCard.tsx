@@ -12,7 +12,7 @@ export default function StatsCard({
     <div className="bg-white p-3 md:p-8 rounded-lg border-2 border-gray-200 hover:border-2 hover:border-accent/30 hover:shadow-lg transition duration-[400ms] ease-in-out">
       <div className="flex justify-between">
         <div className="text-center text-primary-500 text-accent">{icon}</div>
-        <p className="text-2xl md:text-3xl lg:text-5xl text-secondary font-main ">
+        <p className="text-2xl md:text-3xl lg:text-5xl text-secondary font-highlight ">
           {value}
         </p>
       </div>

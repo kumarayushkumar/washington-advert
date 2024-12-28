@@ -18,7 +18,7 @@ export default function Navbar({ toggleZIndex }: { toggleZIndex: () => void }) {
   }
 
   return (
-    <nav className="flex font-sub text-center items-center text-md font-medium">
+    <nav className="flex font-highlight text-center items-center text-md font-medium">
       <div className="lg:hidden flex items-center">
         <button
           aria-label="toggle navbar"

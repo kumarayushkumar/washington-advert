@@ -503,7 +503,7 @@ export default function SeoPackages() {
                   ([key, value], index) => (
                     <div key={index} className="flex justify-between">
                       <div className="font-medium">{key}</div>
-                      <div className="font-medium md:font-semibold text-lg tracking-wider font-main">
+                      <div className="font-medium md:font-semibold text-lg tracking-wider font-highlight">
                         {value}
                       </div>
                     </div>
@@ -525,7 +525,7 @@ export default function SeoPackages() {
                         <div className="font-medium">{key}</div>
                         <div>
                           {typeof value === 'number' ? (
-                            <p className="font-medium md:font-semibold text-lg tracking-wider font-main">
+                            <p className="font-medium md:font-semibold text-lg tracking-wider font-highlight">
                               {value}
                             </p>
                           ) : (

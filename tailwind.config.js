@@ -14,7 +14,7 @@ export default {
   prefix: '',
   theme: {
     fontFamily: {
-      main: ['"Bebas Neue"', 'serif'],
+      logo: ['"Bebas Neue"', 'serif'],
       sub: ['"Red Rose"', 'serif'],
       highlight: ['"Libre Baskerville"', 'serif']
     },

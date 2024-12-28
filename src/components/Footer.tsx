@@ -44,7 +44,7 @@ export default function Footer() {
     <footer className="bg-[#100c08] text-white pt-6 sm:pt-[5rem] pb-4">
       <div className="container sm:grid sm:grid-cols-2 lg:grid-cols-6 sm:gap-16 px-12 md:px-16 font-sub">
         <div className="sm:col-span-2">
-          <p className="font-main text-3xl lg:text-4xl">WASHINGTON ADVERT</p>
+          <p className="font-logo text-3xl lg:text-4xl">WASHINGTON ADVERT</p>
           <p className="font-highlight mt-4">
             Get Started Today, Supercharge Your Digital Presence.
           </p>
@@ -61,7 +61,7 @@ export default function Footer() {
                   <Link
                     key={index}
                     to={nav.href}
-                    className="hover:text-secondary hover:scale-105 transition-all duration-300">
+                    className="hover:text-secondary text-sm md:text-base font-normal hover:scale-105 transition-all duration-300">
                     {nav.title}
                   </Link>
                 ) : null}
@@ -76,7 +76,7 @@ export default function Footer() {
               <Link
                 key={index}
                 to={nav.href}
-                className="hover:text-secondary hover:scale-105 transition-all duration-300">
+                className="hover:text-secondary text-sm md:text-base font-normal hover:scale-105 transition-all duration-300">
                 {nav.title}
               </Link>
             )
@@ -146,7 +146,7 @@ export default function Footer() {
         ))}
       </div> */}
 
-      <div className="mt-6 big-name uppercase text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-main text-accent">
+      <div className="mt-6 big-name uppercase text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-logo text-accent">
         Washington Advert
       </div>
 
@@ -156,7 +156,7 @@ export default function Footer() {
           target="_blank"
           aria-label={`Visit our privacy policy page`}
           rel="noreferrer"
-          className="hover:scale-[1.1] transition-all duration-300">
+          className="hover:scale-[1.05] transition-all duration-300">
           Privacy Policy
         </a>
         <a
@@ -164,7 +164,7 @@ export default function Footer() {
           target="_blank"
           aria-label={`Visit our terms and condition page`}
           rel="noreferrer"
-          className="hover:scale-[1.1] transition-all duration-300">
+          className="hover:scale-[1.05] transition-all duration-300">
           Terms & Conditions
         </a>
         <a

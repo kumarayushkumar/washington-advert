@@ -11,7 +11,7 @@ export default function Ranking() {
         />
       </div>
       <div className="py-12 md:py-16 px-10 sm:px-12 md:px-20 ranking-wrapper text-white">
-        <p className="text-2xl font-main font-semibold">
+        <p className="text-2xl font-highlight font-semibold">
           GROW TRAFFIC & INCREASE REVENUE
         </p>
         <p className="text-3xl font-sub mt-2 py-4 font-medium">

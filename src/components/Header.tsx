@@ -11,7 +11,8 @@ export default function Header({ toggleZIndex }: { toggleZIndex: () => void }) {
   return (
     <header
       className={`pb-4 ${bgColor} flex text-white justify-between px-8 pt-8 md:px-16`}>
-      <h1 className={`font-main font-medium md:font-bold text-3xl md:text-5xl`}>
+      <h1
+        className={`font-logo font-medium md:font-bold text-3xl md:text-5xl`}>
         Washington Advert
       </h1>
       <Navbar toggleZIndex={toggleZIndex} />

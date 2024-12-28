@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
         <div className="flex flex-col md:flex-row md:gap-14">
           <div className="flex flex-col justify-between">
             <div className="">
-              <p className="text-3xl md:text-4xl font-main">
+              <p className="text-3xl md:text-4xl font-highlight">
                 Why should choose our agency?
               </p>
               <div className="text-lg flex flex-col gap-4 mt-6 md:mt-8">

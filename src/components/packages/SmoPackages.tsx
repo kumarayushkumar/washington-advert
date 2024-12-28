@@ -186,7 +186,7 @@ export default function SmoPackages() {
                         <div className="font-medium">{key}</div>
                         <div>
                           {typeof value === 'number' ? (
-                            <p className="font-medium md:font-semibold text-lg tracking-wider font-main">
+                            <p className="font-medium md:font-semibold text-lg tracking-wider font-highlight">
                               {value}
                             </p>
                           ) : (
