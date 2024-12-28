@@ -80,9 +80,9 @@
 
 @layer base {
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Helvetica';
     font-display: swap;
-    src: url('/assets/fonts/OpenSans-VariableFont_wdth-wght.ttf');
+    src: url('/assets/fonts/Helvetica.woff');
   }
 
   @font-face {
@@ -110,7 +110,7 @@
   }
   body {
     @apply bg-whiteout text-foreground no-scrollbar;
-    font-family: 'Open sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-display: swap;
     scrollbar-width: 0;
   }
