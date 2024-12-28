@@ -82,7 +82,7 @@ export default function Footer() {
             )
           })}
         </div>
-        <div className="mt-6 sm:mt-0 sm:col-span-2 text-xl font-medium flex flex-col">
+        <div className="mt-6 sm:mt-0 sm:col-span-2 font-medium flex flex-col">
           <p className="underline text-base mb-3">Contact Us</p>
           {CONSTANTS.EMAIL && (
             <div className="flex gap-3 items-center w-full hover:scale-105 transition duration-300">
@@ -146,11 +146,11 @@ export default function Footer() {
         ))}
       </div> */}
 
-      <div className="mt-6 big-name uppercase text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-logo text-accent">
+      <div className="mt-6 mb-4 big-name uppercase text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-extrabold text-center font-logo text-accent">
         Washington Advert
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 justify-center font-medium font-sub text-xs md:text-base text-center my-2 md:my-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 justify-center font-medium font-sub text-xs md:text-base text-center mb-4 md:mb-6">
         <a
           href="/privacy-policy"
           target="_blank"
@@ -176,7 +176,7 @@ export default function Footer() {
           Refund Policy
         </a>
       </div>
-      <p className="text-sm mt-2 font-medium font-sub text-center">
+      <p className="text-sm font-medium font-sub text-center py-2">
         © 2024 Washington Advert. All Rights Reserved.
       </p>
     </footer>
