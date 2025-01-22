@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
 }
 
 @layer base {
@@ -106,10 +99,12 @@
   * {
     @apply border-border;
     scroll-behavior: smooth;
-    scrollbar-width: 0;
+  }
+  html {
+    scrollbar-width: none;
   }
   body {
-    @apply bg-whiteout text-foreground no-scrollbar;
+    @apply bg-whiteout text-foreground;
     font-family: 'Helvetica', sans-serif;
     font-display: swap;
     scrollbar-width: 0;
