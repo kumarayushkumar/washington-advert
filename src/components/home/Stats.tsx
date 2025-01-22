@@ -26,7 +26,7 @@ export default function Stats() {
     }
   ]
   return (
-    <section id="stats" className=" bg-white py-6 md:py-14 ">
+    <section id="stats" className=" bg-white py-12 md:py-20 ">
       <div className="md:flex justify-around grid grid-cols-2 gap-4 px-5">
         {stats.map((stat, index) => (
           <StatsCard

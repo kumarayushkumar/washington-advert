@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     navigate('/contact-us')
   }
   return (
-    <section id="why-choose-us" className="py-8 md:pt-16 md:pb-12 bg-whiteout">
+    <section id="why-choose-us" className="py-12 md:pt-24 md:pb-20 bg-whiteout">
       <div className="px-6 md:px-16 container">
         <div className="flex flex-col md:flex-row md:gap-14">
           <div className="flex flex-col justify-between">
@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
         </div>
       </div>
       <span className="h-1 block bg-accent my-4 md:my-8"></span>
-      <div className="flex justify-between px-4 md:px-20 pt-2">
+      <div className="flex justify-between px-4 md:px-20 pt-4">
         {whyChooseUsPoints.map((point, index) => (
           <div key={index} className="flex items-center gap-2 md:gap-4">
             <span className="rounded-full border-2 border-secondary">

@@ -7,7 +7,7 @@ export default function Ranking() {
         <img
           src={img}
           alt="Googel ranking"
-          className="w-full h-full object-fit object-center mx-auto "
+          className="w-full h-full object-cover object-center mx-auto "
         />
       </div>
       <div className="py-12 md:py-16 px-10 sm:px-12 md:px-20 ranking-wrapper text-white">
