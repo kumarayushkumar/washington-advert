@@ -34,7 +34,7 @@ export default function ServiceCard({
           />
         ) : null}
         <div className=" flex flex-col items-start justify-center pl-8 md:pl-14 ">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-sub font-medium sm:font-semibold">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-medium">
             {title}
           </p>
           <p className="text-md lg:text-lg xl:text-xl font-light mt-1 md:mt-2">
